@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "2b2005b99755a2db",
+    "type": "split",
+    "children": [
+      {
+        "id": "d84d5f56dbd8d5cc",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Cheatsheet/Bitbucket.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "69918930f08ae5d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e941a6677ed36349",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "542cce375c5c9778",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f7ffde552b7720c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b129df7f6f899faf",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d352442c1c86c9e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4adee79c3965d58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "715093af25ab0446",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Cheatsheet/Bitbucket.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "aec39f95de394726",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Cheatsheet/Bitbucket.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "726f62b371f729fc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "34a0e252567eb628",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Cheatsheet/Bitbucket.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d84d5f56dbd8d5cc",
+  "lastOpenFiles": [
+    "Cheatsheet/Linux.md",
+    "Platform/Auth0.md",
+    "Cheatsheet/CSS.md",
+    "Cheatsheet/Typescript.md",
+    "Cheatsheet/Javascript.md",
+    "Cheatsheet/C#.md",
+    "Cheatsheet/Vim.md",
+    "Cheatsheet/Docker.md",
+    "Cheatsheet/Git.md",
+    "Platform/Google Cloud Platform.md"
+  ]
+}
