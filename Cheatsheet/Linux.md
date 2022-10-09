@@ -1,35 +1,19 @@
 # Command
-### List All Folders
-```bash
-ls
-```
-#### Make Directory
-```bash
-mkrdir <folder_name>
-```
-#### Delete File
-```bash
-rm <file_path>
-```
-#### Delete Folder
-```bash
-rmdir <folder_path>
-```
-#### Delete Folder and all its files
-```bash
-rm -rf <folder_path>
-```
+| Command             | Description                |
+| ------------------- | -------------------------- |
+| ls                  | List all folders and files | 
+| mkdir [folder-name] | Create folder              |
+| rm [file_path]      | Delete file                |
+| rmdir [folder_path] | Delete folder              |
+| rm -rf [path]       | Delete everything          |
 # Alias
-### List all alias
-```bash
-alias
-```
-### Get alias source
-```bash
-which <command>
-```
-#### Create Permanent Alias
+## Create Permanent Alias
 Edit  `~/.bash_aliases` or `~/.bashrc`  file
 ```bash
 alias <name>='<command>'
 ```
+## Command
+| Command       | Description      |
+| ------------- | ---------------- |
+| alias         | List all alias   |
+| which [alias] | Get alias source | 

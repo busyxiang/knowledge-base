@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Platform/macOS.md",
+            "file": "Cheatsheet/Git.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Platform/macOS.md",
+                "file": "Cheatsheet/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Platform/macOS.md",
+                "file": "Cheatsheet/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Platform/macOS.md"
+                "file": "Cheatsheet/Git.md"
               }
             }
           },
@@ -139,15 +139,15 @@
   },
   "active": "d84d5f56dbd8d5cc",
   "lastOpenFiles": [
-    "Platform/Mobile.md",
-    "Platform/macOS.md",
-    "Cheatsheet/CSS.md",
+    "Cheatsheet/Docker.md",
     "Cheatsheet/Bitbucket.md",
-    "README.md",
-    "Cheatsheet/Vim.md",
+    "Cheatsheet/C#.md",
+    "Cheatsheet/CSS.md",
+    "Cheatsheet/Git.md",
+    "Cheatsheet/Javascript.md",
+    "Cheatsheet/Linux.md",
+    "Cheatsheet/macOS.md",
     "Cheatsheet/Web.md",
-    "Platform/Apple.md",
-    "Apple.md",
-    "Cheatsheet/macOS.md"
+    "Cheatsheet/Vim.md"
   ]
 }
