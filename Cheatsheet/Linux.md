@@ -28,8 +28,8 @@ alias
 ```bash
 which <command>
 ```
-#### Create Alias
-In order to create a permanent alias, edit  `~/.bash_aliases` or `~/.bashrc`  file
+#### Create Permanent Alias
+Edit  `~/.bash_aliases` or `~/.bashrc`  file
 ```bash
 alias <name>='<command>'
 ```

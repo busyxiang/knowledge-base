@@ -1,6 +1,8 @@
 # Index
 1. [Date](#Date)
 2. [Number](#number)
+# Object
+
 # Date
 ```js
 new Date().toLocaleString()
