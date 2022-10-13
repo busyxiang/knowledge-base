@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Cheatsheet/Git.md",
-            "mode": "source",
+            "file": "Cheatsheet/Javascript.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md"
+                "file": "Cheatsheet/Javascript.md"
               }
             }
           },
@@ -139,11 +139,11 @@
   },
   "active": "d84d5f56dbd8d5cc",
   "lastOpenFiles": [
+    "Cheatsheet/Git.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/Bitbucket.md",
     "Cheatsheet/C#.md",
     "Cheatsheet/CSS.md",
-    "Cheatsheet/Git.md",
     "Cheatsheet/Javascript.md",
     "Cheatsheet/Linux.md",
     "Cheatsheet/macOS.md",

@@ -106,3 +106,8 @@ console.log(10000000..toLocaleString())
 1234..toLocaleString('en-US', {style: 'unit', unit: 'liter', unitDisplay: 'narrow'})
 // => 1,234L
 ```
+# JSON
+## Pretty Print
+```js
+JSON.stringify(<input>, null, 2)
+```
