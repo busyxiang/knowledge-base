@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/React.md",
-                "mode": "preview",
+                "file": "Cheatsheet/Git.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/React.md",
+                "file": "Cheatsheet/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/React.md",
+                "file": "Cheatsheet/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/React.md"
+                "file": "Cheatsheet/Git.md"
               }
             }
           },
@@ -163,8 +163,8 @@
   },
   "active": "3421c0e62179e9a4",
   "lastOpenFiles": [
-    "Cheatsheet/macOS.md",
     "Cheatsheet/React.md",
+    "Cheatsheet/macOS.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/Linux.md",
     "Cheatsheet/Javascript.md",
