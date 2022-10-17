@@ -1,5 +1,5 @@
 # Command
-## Checkout branch
+## Switch local branch
 ```bash
 git switch <branch>
 ```
