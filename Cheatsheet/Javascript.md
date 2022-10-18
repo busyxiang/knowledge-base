@@ -2,6 +2,22 @@
 1. [Date](#Date)
 2. [Number](#number)
 # Object
+## Deconstruct
+```js
+const data = {
+	foo: 'foo',
+	bar: {
+		fooBar: 'foobar'
+	},
+	fooBar: ['foo', 'bar'],
+}
+
+const {
+	foo, 
+	bar: { fooBar }, 
+	foorBar: [fooItem, barItem]
+} = data;
+```
 
 # Date
 ```js
