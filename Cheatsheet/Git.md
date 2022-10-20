@@ -1,4 +1,8 @@
 # Command
+## Create new branch and switch to it
+```bash
+git checkout -b <branch>
+```
 ## Discard existing files uncommitted changes
 ```bash
 git reset --hard
