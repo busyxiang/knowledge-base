@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Platform/Mobile.md",
                 "mode": "preview",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Platform/Mobile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Platform/Mobile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md"
+                "file": "Platform/Mobile.md"
               }
             }
           },
@@ -163,15 +163,15 @@
   },
   "active": "3421c0e62179e9a4",
   "lastOpenFiles": [
+    "Platform/Apple.md",
+    "Platform/Mobile.md",
+    "Platform/Google.md",
+    "Cheatsheet/Git.md",
     "Cheatsheet/Javascript.md",
     "Cheatsheet/Typescript.md",
     "Cheatsheet/React.md",
-    "Cheatsheet/Git.md",
     "Cheatsheet/macOS.md",
     "Cheatsheet/Linux.md",
-    "Cheatsheet/Docker.md",
-    "Cheatsheet/Bitbucket.md",
-    "Cheatsheet/C#.md",
-    "Cheatsheet/CSS.md"
+    "Cheatsheet/Docker.md"
   ]
 }
