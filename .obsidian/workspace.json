@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fd7a87470e88c79a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cheatsheet/Apollo GraphQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Platform/Mobile.md",
+                "file": "Cheatsheet/Apollo GraphQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Platform/Mobile.md",
+                "file": "Cheatsheet/Apollo GraphQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Platform/Mobile.md"
+                "file": "Cheatsheet/Apollo GraphQL.md"
               }
             }
           },
@@ -161,10 +173,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "3421c0e62179e9a4",
+  "active": "fd7a87470e88c79a",
   "lastOpenFiles": [
-    "Platform/Apple.md",
     "Platform/Mobile.md",
+    "Platform/Apple.md",
     "Platform/Google.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/Javascript.md",
