@@ -19,3 +19,7 @@ git switch <branch>
 ```bash
 git push origin <source>:<target>
 ```
+## Resolve conflicting tags
+```bash
+git pull --tags -f
+```
