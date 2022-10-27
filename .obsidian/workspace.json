@@ -20,18 +20,19 @@
             }
           },
           {
-            "id": "3421c0e62179e9a4",
+            "id": "21bb258ec6fcaca7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Platform/Mobile.md",
+                "file": "Platform/Expo.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Platform/Expo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Platform/Expo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md"
+                "file": "Platform/Expo.md"
               }
             }
           },
@@ -156,20 +157,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "d84d5f56dbd8d5cc",
+  "active": "21bb258ec6fcaca7",
   "lastOpenFiles": [
-    "Cheatsheet/Apollo GraphQL.md",
-    "Platform/Mobile.md",
-    "Platform/Apple.md",
-    "Platform/Google.md",
+    "Cheatsheet/Expo.md",
     "Cheatsheet/Git.md",
+    "Platform/Expo.md",
+    "Platform/Apple.md",
+    "Platform/Mobile.md",
+    "Cheatsheet/Apollo GraphQL.md",
+    "Platform/Google.md",
     "Cheatsheet/Javascript.md",
     "Cheatsheet/Typescript.md",
-    "Cheatsheet/React.md",
-    "Cheatsheet/macOS.md",
-    "Cheatsheet/Linux.md"
+    "Cheatsheet/React.md"
   ]
 }
