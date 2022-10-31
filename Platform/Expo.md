@@ -11,3 +11,4 @@ expo r -c
 
 // ...eas command to deploy OTA updates
 ```
+> Once OTA update is **published** and the user **installed** the update, it is **impossible** to revert back to the build version
