@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Github Actions.md",
+                "file": "Cheatsheet/Web.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/Github Actions.md",
+                "file": "Cheatsheet/Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/Github Actions.md",
+                "file": "Cheatsheet/Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Github Actions.md"
+                "file": "Cheatsheet/Web.md"
               }
             }
           },
@@ -146,15 +146,15 @@
   },
   "active": "e92e5ddd0360cf2c",
   "lastOpenFiles": [
-    "Cheatsheet/Git.md",
+    "Cheatsheet/React.md",
+    "Cheatsheet/Web.md",
+    "Cheatsheet/Typescript.md",
     "Cheatsheet/Github Actions.md",
+    "Cheatsheet/Git.md",
     "Cheatsheet/Expo.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/CSS.md",
     "README.md",
-    "Platform/Expo.md",
-    "Platform/macOS.md",
-    "Platform/Mobile.md",
-    "Platform/Google.md"
+    "Platform/Expo.md"
   ]
 }

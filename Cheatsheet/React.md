@@ -4,3 +4,35 @@ const Component = <T,>(props: Props<T>)=>{
 	// ...component codes
 }
 ```
+---
+# Packages
+## UI Library
+- [Ant Design](https://ant.design/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Mantine](https://mantine.dev/)
+
+## State Management
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [TanStack React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
+
+## Form
+- [Formik](https://formik.org/)
+
+## Text Editor
+- [Lexical](https://lexical.dev/) 
+
+## Icon
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## Headless UI
+- [TanStack Table](https://tanstack.com/table)
+
+## Tour
+- [React Joyride](https://react-joyride.com/)
+
+## Chart
+- [Recharts](https://recharts.org/en-US)
+
+## Optimisation
+- [Loadable Components](https://loadable-components.com/)
+- 
