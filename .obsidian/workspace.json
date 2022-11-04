@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "339b719f9ed33291",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cheatsheet/Dropbox.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/Javascript.md",
+                "file": "Cheatsheet/Dropbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/Javascript.md",
+                "file": "Cheatsheet/Dropbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Javascript.md"
+                "file": "Cheatsheet/Dropbox.md"
               }
             }
           },
@@ -144,8 +157,9 @@
     "direction": "horizontal",
     "width": 266.5
   },
-  "active": "e92e5ddd0360cf2c",
+  "active": "339b719f9ed33291",
   "lastOpenFiles": [
+    "Cheatsheet/Javascript.md",
     "Cheatsheet/Web.md",
     "Cheatsheet/React.md",
     "Cheatsheet/Typescript.md",
@@ -154,7 +168,6 @@
     "Cheatsheet/Expo.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/CSS.md",
-    "README.md",
-    "Platform/Expo.md"
+    "README.md"
   ]
 }
