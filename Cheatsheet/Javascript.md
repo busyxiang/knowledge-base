@@ -19,7 +19,9 @@ const {
 } = data;
 ```
 
-# Date
+# String
+## toLocateString()
+### Date
 ```js
 new Date().toLocaleString()
 // => 24/4/2022, 10:40:00 am
@@ -80,7 +82,7 @@ console.log(new Date().toLocaleString('en-US', {
 }))
 // => Sunday, April 24, 2022 Anno Domini at 10:00:00.124 in the morning India Standard Time
 ```
-# Number
+### Number
 ```js
 console.log(10000000..toLocaleString())
 // => 10,000,000
