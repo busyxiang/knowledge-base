@@ -131,6 +131,18 @@ console.log(10000000..toLocaleString())
 	//...codes
 })()
 ```
+# Comment
+## Function
+```js
+/**
+* line 1
+* line 2
+* line 3
+*/
+const examplFunction = ()=>{
+	//...rest
+}
+```
 # JSON
 ## Pretty Print
 ```js

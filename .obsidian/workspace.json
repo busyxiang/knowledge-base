@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/React Native.md",
+                "file": "Cheatsheet/Git.md",
                 "mode": "preview",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/React Native.md",
+                "file": "Cheatsheet/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/React Native.md",
+                "file": "Cheatsheet/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/React Native.md"
+                "file": "Cheatsheet/Git.md"
               }
             }
           },
@@ -172,14 +172,14 @@
   "active": "017766c264530787",
   "lastOpenFiles": [
     "Cheatsheet/Javascript.md",
+    "Cheatsheet/Typescript.md",
+    "Cheatsheet/React Native.md",
     "Cheatsheet/Vim.md",
     "Cheatsheet/Dropbox.md",
     "Cheatsheet/Web.md",
     "Cheatsheet/React.md",
-    "Cheatsheet/Typescript.md",
     "Cheatsheet/Github Actions.md",
     "Cheatsheet/Git.md",
-    "Cheatsheet/Expo.md",
-    "Cheatsheet/Docker.md"
+    "Cheatsheet/Expo.md"
   ]
 }

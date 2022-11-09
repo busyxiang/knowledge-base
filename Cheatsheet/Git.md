@@ -23,3 +23,7 @@ git push origin <source>:<target>
 ```bash
 git pull --tags -f
 ```
+## Update submodules
+```bash
+git submodule update --recursive --remote
+```
