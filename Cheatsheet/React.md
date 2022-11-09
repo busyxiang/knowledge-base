@@ -1,3 +1,11 @@
+# Hooks
+## useState
+### Initialize state with function
+```js
+const [state, setState] = useState(()=>{
+	//...rest
+});
+```
 # Generic
 ```jsx
 const Component = <T,>(props: Props<T>)=>{
