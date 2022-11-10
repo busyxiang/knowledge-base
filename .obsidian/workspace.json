@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/React.md",
+                "file": "Cheatsheet/Typescript.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/React.md",
+                "file": "Cheatsheet/Typescript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/React.md",
+                "file": "Cheatsheet/Typescript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/React.md"
+                "file": "Cheatsheet/Typescript.md"
               }
             }
           },
@@ -146,15 +146,15 @@
   },
   "active": "017766c264530787",
   "lastOpenFiles": [
-    "Cheatsheet/Javascript.md",
+    "Platform/Mobile.md",
+    "Platform/Google.md",
+    "Platform/macOS.md",
     "Cheatsheet/React.md",
+    "Cheatsheet/Javascript.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/C#.md",
     "Cheatsheet/CSS.md",
     "Cheatsheet/Docker.md",
-    "Cheatsheet/Vim.md",
-    "Cheatsheet/Typescript.md",
-    "Cheatsheet/macOS.md",
-    "Cheatsheet/Linux.md"
+    "Cheatsheet/Vim.md"
   ]
 }

@@ -1,3 +1,20 @@
+# Class
+```ts
+interface ExampleInterface{
+	foo: string;
+	bar: number;
+}
+
+class Example implements ExampleInterface{
+	foo: string;
+	bar: number;
+
+	constructor(init: ExampleInterface){
+		this.foo = init.foo;
+		this.bar = init.bar;
+	}
+}
+```
 # Generic
 ```ts
 class Example<T>{
@@ -8,6 +25,7 @@ class Example<T>{
 	}
 }
 ```
+
 ## Optional
 ```ts
 class Example<T = {}>{
