@@ -41,4 +41,4 @@ In the `public` folder, create `.well-known` folder which need to have `assetlin
 > `Application Identifier Prefix` is your developer account **Team ID**
 
 ## Validate
-Use the following links to validate the hosted files for [Android](https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://<domain>&relation=delegate_permission/common.handle_all_urls) and [Apple](https://branch.io/resources/aasa-validator/)
+Use the following links to validate the hosted files for [[Google#Validate]] and [[Apple#Validate AASA]]
