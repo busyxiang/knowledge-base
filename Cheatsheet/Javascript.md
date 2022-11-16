@@ -1,6 +1,10 @@
 # Index
 1. [Date](#Date)
 2. [Number](#number)
+3. [Function](#function)
+4. [Comment](#comment)
+5. [JSON](#json)
+6. [Package](#package)
 # Object
 ## Deconstruct
 ```js
@@ -148,3 +152,45 @@ const examplFunction = ()=>{
 ```js
 JSON.stringify(<input>, null, 2)
 ```
+---
+# Package
+## Cookie
+- [js-cookie](https://github.com/js-cookie/js-cookie)
+
+## Text Formatting
+- [Numeral.js](http://numeraljs.com/)
+
+## Color
+- [Chroma.js](https://www.npmjs.com/package/chroma-js)
+
+## File
+- [bytes](https://www.npmjs.com/package/bytes)
+
+## Document
+- [ExcelJS](https://www.npmjs.com/package/exceljs)
+
+## Tour
+- [Shepherd](https://shepherdjs.dev/)
+
+## Validation
+- [Yup](https://github.com/jquense/yup)
+- [Joi](https://github.com/hapijs/joi)
+
+## Pre-commit Hook
+- [Husky](https://typicode.github.io/husky/#/)
+
+## Testing
+- [Faker](https://www.npmjs.com/package/@faker-js/faker)
+- [MockDate](https://www.npmjs.com/package/mockdate)
+
+## Prettier Plugins
+- [Sort Imports](https://github.com/trivago/prettier-plugin-sort-imports)
+
+## Generator
+- [uuid](https://www.npmjs.com/package/uuid)
+
+## Database
+- [Knex.js](https://knexjs.org/)
+
+## Payment
+- [Stripe](https://stripe.com/en-my)

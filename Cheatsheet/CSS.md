@@ -1,3 +1,5 @@
+# Font
+Only import font and font weight necessary for optimization
 # Variable
 ```css
 /* Global */

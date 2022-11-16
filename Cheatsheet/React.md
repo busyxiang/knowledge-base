@@ -26,6 +26,9 @@ const Component = <T,>(props: Props<T>)=>{
 ## Form
 - [Formik](https://formik.org/)
 
+## Drag and Drop
+- [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd)
+
 ## Calendar
 - [react-big-calendar](https://github.com/jquense/react-big-calendar)
 
@@ -44,6 +47,11 @@ const Component = <T,>(props: Props<T>)=>{
 ## Chart
 - [Recharts](https://recharts.org/en-US)
 
+## Localization
+- [i18next](https://www.i18next.com/)
+
+## Monitor/Tracking
+- [Sentry](https://sentry.io/)
+
 ## Optimisation
 - [Loadable Components](https://loadable-components.com/)
-- 

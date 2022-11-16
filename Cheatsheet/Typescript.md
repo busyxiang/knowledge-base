@@ -42,3 +42,6 @@ Get array item type
 ```typescript
 export type ArrayElement<T> = T extends (infer U)[] ? U : null;
 ```
+# Package
+## GraphQL
+- [GraphQL Codegen](https://the-guild.dev/graphql/codegen)

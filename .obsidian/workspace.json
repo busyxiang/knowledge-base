@@ -11,8 +11,12 @@
             "id": "017766c264530787",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cheatsheet/Javascript.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cheatsheet/Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cheatsheet/Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cheatsheet/Javascript.md"
+              }
             }
           },
           {
@@ -134,19 +142,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.5
+    "width": 261.5
   },
   "active": "017766c264530787",
   "lastOpenFiles": [
-    "Platform/Expo.md",
-    "Platform/Mobile.md",
-    "Platform/Apple.md",
-    "Platform/Google.md",
-    "Platform/macOS.md",
-    "Cheatsheet/macOS.md",
+    "Cheatsheet/Typescript.md",
+    "Cheatsheet/Vim.md",
+    "Cheatsheet/Javascript.md",
     "Cheatsheet/React.md",
     "Cheatsheet/React Native.md",
-    "Cheatsheet/Typescript.md",
-    "Cheatsheet/Javascript.md"
+    "Cheatsheet/Git.md",
+    "Cheatsheet/Github Actions.md",
+    "Cheatsheet/CSS.md",
+    "Platform/Expo.md",
+    "Platform/Google.md"
   ]
 }
