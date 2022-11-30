@@ -27,3 +27,15 @@ jobs:
     steps:
       - run: echo ${{needs.job1.outputs.output1}} ${{needs.job1.outputs.output2}}
 ```
+## Check step fails
+```yml
+jobs:
+	job1:
+		- name: 'Step that fails'
+		  id: 'step_fail'
+		  # ...run something that might fails
+
+		- name: 'Run if step fails',
+		  if: ${{ failure() && steps.step_fail.conclusion == 'failure' }}
+		  # ...run something when the step fails
+```
