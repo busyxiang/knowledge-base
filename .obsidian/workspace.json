@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b8463c56b43a0e22",
+        "id": "e72ca77a98634e81",
         "type": "tabs",
         "children": [
           {
-            "id": "017766c264530787",
+            "id": "6f7a9f103fa2252c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Github Actions.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ec0729ee0aa30677",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cheatsheet/NPM.md",
-                "mode": "preview",
+                "file": "Platform/GitHub.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/NPM.md",
+                "file": "Platform/GitHub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/NPM.md",
+                "file": "Platform/GitHub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/NPM.md"
+                "file": "Platform/GitHub.md"
               }
             }
           },
@@ -157,9 +144,10 @@
     "direction": "horizontal",
     "width": 261.5
   },
-  "active": "ec0729ee0aa30677",
+  "active": "6f7a9f103fa2252c",
   "lastOpenFiles": [
     "Cheatsheet/Github Actions.md",
+    "Cheatsheet/NPM.md",
     "Platform/macOS.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/Javascript.md",
@@ -167,7 +155,6 @@
     "Cheatsheet/Web.md",
     "Cheatsheet/CSS.md",
     "Cheatsheet/Dropbox.md",
-    "Cheatsheet/Typescript.md",
-    "Cheatsheet/Vim.md"
+    "Cheatsheet/Typescript.md"
   ]
 }
