@@ -27,3 +27,9 @@ git pull --tags -f
 ```bash
 git submodule update --recursive --remote
 ```
+## Rebase
+Lets say you are working on `new-feature` branch and want to integrate latest changes from `main` into the `new-feature` branch
+```bash
+git checkout new-feature
+git rebase main
+```
