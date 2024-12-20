@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Postgres SQL.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Postgres SQL"
             }
           }
         ]
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Postgres SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git"
+              "title": "Backlinks for Postgres SQL"
             }
           },
           {
@@ -122,12 +122,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Postgres SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Git"
+              "title": "Outgoing links from Postgres SQL"
             }
           },
           {
@@ -169,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md"
+                "file": "Cheatsheet/Postgres SQL.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline of Postgres SQL"
             }
           }
         ],
@@ -196,6 +196,7 @@
   },
   "active": "3ab77a3ab8414588",
   "lastOpenFiles": [
+    "Cheatsheet/Git.md",
     "Cheatsheet/Makefile.md",
     "Cheatsheet/Linux.md",
     "Cheatsheet/macOS.md",
@@ -204,7 +205,6 @@
     "Cheatsheet/Web.md",
     "Cheatsheet/Typescript.md",
     "Cheatsheet/Javascript.md",
-    "Cheatsheet/Git.md",
     "Cheatsheet/Expo.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/React Native.md",
