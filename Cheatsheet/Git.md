@@ -33,3 +33,7 @@ Lets say you are working on `new-feature` branch and want to integrate latest ch
 git checkout new-feature
 git rebase main
 ```
+## Force Update Tags
+```bash
+git fetch --tags --force
+```
