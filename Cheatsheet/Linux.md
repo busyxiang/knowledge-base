@@ -1,66 +1,77 @@
-# Command
-| Command             | Description                |
-| ------------------- | -------------------------- |
-| ls                  | List all folders and files |
-| mkdir [folder-name] | Create folder              |
-| rm [file_path]      | Delete file                |
-| rmdir [folder_path] | Delete folder              |
-| rm -rf [path]       | Delete everything          |
-| alias               | List all alias             |
-| which [alias]       | Get alias source           |
-# Alias
-## Create Permanent Alias
-Edit  `~/.bash_aliases` or `~/.bashrc`  file
+## File and Directory Operations
+| Command               | Description                                 |
+| --------------------- | ------------------------------------------- |
+| `ls`                  | List all folders and files                  |
+| `ls -l`               | Long format (detailed information)          |
+| `ls -a`               | Show all files, including hidden files      |
+| `mkdir [folder-name]` | Create a new folder                         |
+| `rm [file_path]`      | Delete a file                               |
+| `rmdir [folder_path]` | Delete an empty folder                      |
+| `rm -rf [path]`       | Force delete everything (use with caution!) |
+## Terminal Navigation Shortcuts
+
+| Shortcut   | Description                   |
+| ---------- | ----------------------------- |
+| `Ctrl + A` | Jump to start of the line     |
+| `Ctrl + E` | Jump to end of the line       |
+| `Ctrl + R` | Search command history        |
+| `Ctrl + U` | Clear before cursor           |
+| `Ctrl + K` | Clear after cursor            |
+| `cd -`     | Go back to previous directory |
+## Command History
+| Command                     | Description                  |
+| --------------------------- | ---------------------------- |
+| `!!`                        | Repeat the last command      |
+| `history`                   | View command history         |
+| `history \| grep [keyword]` | Search history for a keyword |
+## Searching and Filtering Text
 ```bash
+# Basic pattern search
+grep "error" log.txt
+
+# Case-insensitive search
+grep -i "warning" log.txt
+
+# Recursive search in directories
+grep -r "pattern" /path/to/directory
+```
+## String Manipulation
+```bash
+# Trim a string
+str='This is an example sentence'
+echo "${str:0:15}" # Output: "This is an exam"
+```
+## File Manipulation
+```bash
+# Combine multiple text files into one file
+cat file1 file2 file3 file4 > combined.txt
+cat *.txt > combined.txt
+cat ./**/*.txt > combined.txt
+cat ./**/sample.txt > combined.txt
+
+# Copy files with visual progress (real-time)
+rsyc --progress file1.text /opt
+```
+## Alias Management
+```bash
+# Create a permanent alias (add to ~/.bash_aliases or ~/.bashrc)
 alias <name>='<command>'
-```
-# Command Chaining Operators
-## Ampersand (&)
-This operator is to make the command run in the background
 
-Run a single command in the background
-```bash
-ping www.google.com &
-```
+# List all aliases
+alias
 
-Run two or multiple commands in the background
-```bash
-apt update & apt upgrade &
+# Find alias source
+which [alias]
 ```
-## Semi-Colon (;)
-This operator makes it possible to run multiple commands in a single go
-```bash
-apt update ; apt upgrade ; mkdir test
-```
-## AND (&&)
-This operator would execute the second command only if the execution of the first command **SUCCEEDS**
-```bash
-ping www.google.com && ls
-```
-## OR (||)
-This operator allows to execute second command only if the execution of the first command fails
-```bash
-apt update || links tecmint.com
-```
-## NOT (!)
-This operator execute all except the condition provided
-```bash
-rm -r !(*.html)
-```
-## Command Combination {}
-This operator combine two or more commands
-```bash
-[ -d bin ] || { echo Directory does not exist, creating directory now.; mkdir bin; } && echo Directory exists.
-```
-## Precedence ()
-This operator makes it possible to execute commands in precedence order
-```bash
-(Command_x1 &&Command_x2) || (Command_x3 && Command_x4)
-```
-## Concatenation \\
-This operator is used to concatenate large commands over several lines.
+## Command Chaining Operators
+| Operator | Description                                | Example                                                        |
+| -------- | ------------------------------------------ | -------------------------------------------------------------- |
+| `&`      | Run command in background                  | `ping google.com &`<br><br>`ping google.com & ping google.com` |
+| `;`      | Run commands sequentially                  | `apt update; apt upgrade`                                      |
+| `&&`     | Run next command only if previous succeeds | `ping google.com && ls`                                        |
+| \|\|     | Run next command only if previous fails    | apt update \|\| echo "Failed"`                                 |
+| `!`      | Exclude pattern                            | `rm -r !(*.html)`                                              |
+| `{}`     | Command grouping                           | [ -d bin ] \|\| { echo "Creating bin"; mkdir bin; }            |
+| `()`     | Precedence grouping                        | (cmd1 && cmd2) \|\| (cmd3 && cmd4)                             |
+| `\`      | Line continuation                          | `cmd1\cmd2`                                                    |
 
-The below command will open a text file **test(1).txt**.
-```bash
-nano test\(1\).txt
-```

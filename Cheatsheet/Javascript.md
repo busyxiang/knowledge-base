@@ -1,10 +1,3 @@
-# Index
-1. [Date](#Date)
-2. [Number](#number)
-3. [Function](#function)
-4. [Comment](#comment)
-5. [JSON](#json)
-6. [Package](#package)
 # Object
 ## Deconstruct
 ```js
@@ -23,6 +16,14 @@ const {
 } = data;
 ```
 
+# Number
+## Floating Point Precision Issues
+JavaScript uses the IEEE 754 standard for floating-point arithmetic, which can lead to precision errors when performing arithmetic operations with decimal numbers. Recommended to use [[NPM#Packages#Number]] to prevent this kind of issues
+
+```js
+const total = 0.1 + 0.2;
+// Outputs: 0.30000000000000004
+```
 # String
 ## toLocateString()
 ### Date
