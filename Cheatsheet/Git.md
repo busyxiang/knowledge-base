@@ -43,3 +43,4 @@ git show [HASH]
 ```
 ## Check Repo Size
 - [git-sizer](https://github.com/github/git-sizer)
+- https://www.jonathancreamer.com/how-we-shrunk-our-git-repo-size-by-94-percent/
