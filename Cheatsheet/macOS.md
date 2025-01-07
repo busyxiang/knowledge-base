@@ -8,3 +8,6 @@ Then run
 ```bash
 kill -9 <PID>
 ```
+# ITerm2 Setup
+## Plugins
+- **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)**
