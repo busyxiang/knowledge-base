@@ -37,3 +37,9 @@ git rebase main
 ```bash
 git fetch --tags --force
 ```
+## Find Commit By Hash
+```bash
+git show [HASH]
+```
+## Check Repo Size
+- [git-sizer](https://github.com/github/git-sizer)

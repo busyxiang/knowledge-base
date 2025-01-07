@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/macOS.md",
+                "file": "Cheatsheet/Git.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "macOS"
+              "title": "Git"
             }
           }
         ]
@@ -169,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/macOS.md"
+                "file": "Cheatsheet/Git.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of macOS"
+              "title": "Outline of Git"
             }
           }
         ],
@@ -194,10 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3ab77a3ab8414588",
+  "active": "ebcf3db4e49c24aa",
   "lastOpenFiles": [
-    "Platform/Apple.md",
     "Cheatsheet/macOS.md",
+    "Platform/Apple.md",
     "Cheatsheet/Postgres SQL.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/Makefile.md",
