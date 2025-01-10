@@ -6,7 +6,12 @@
 | npm repo [package-name] | Open package's GitHub repo               |
 | npm outdated            | Check packages for outdated dependencies |
 # Packages
+
+^e9d856
+
 ## Common
+### Number
+- [decimal.js](https://www.npmjs.com/package/decimal.js/v/10.4.3)
 ### File
 - [bytes](https://www.npmjs.com/package/bytes)
 ### Date
