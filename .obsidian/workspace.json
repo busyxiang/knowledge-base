@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Git.md",
-                "mode": "preview",
+                "file": "Cheatsheet/NPM.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "NPM"
             }
           }
         ]
@@ -169,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md"
+                "file": "Cheatsheet/NPM.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline of NPM"
             }
           }
         ],
@@ -194,23 +194,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebcf3db4e49c24aa",
+  "active": "3ab77a3ab8414588",
   "lastOpenFiles": [
+    "Cheatsheet/Web.md",
+    "Cheatsheet/NPM.md",
     "Cheatsheet/Vue.md",
+    "Cheatsheet/Vim.md",
+    "Cheatsheet/Typescript.md",
+    "Cheatsheet/React Native.md",
+    "Cheatsheet/React.md",
+    "Cheatsheet/Postgres SQL.md",
+    "Cheatsheet/Dropbox.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/macOS.md",
     "Platform/Apple.md",
-    "Cheatsheet/Postgres SQL.md",
     "Cheatsheet/Makefile.md",
     "Cheatsheet/Linux.md",
-    "Cheatsheet/NPM.md",
-    "Cheatsheet/Web.md",
-    "Cheatsheet/Typescript.md",
     "Cheatsheet/Javascript.md",
     "Cheatsheet/Expo.md",
     "Cheatsheet/Docker.md",
-    "Cheatsheet/React Native.md",
-    "Cheatsheet/React.md",
     "Cheatsheet/Github Actions.md",
     "Untitled.canvas",
     "Cheatsheet/CSS.md",

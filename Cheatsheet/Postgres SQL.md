@@ -21,3 +21,5 @@ update TABLE set COLUMN = COLUMN || '{VALUE}' where id = 2
 ```sql
 update TABLE set COLUMN = array_remove(COLUMN, 'VALUE') where id = 1
 ```
+# Best Practice
+- [Don't Do This](https://wiki.postgresql.org/wiki/Don't_Do_This#Don.27t_use_char.28n.29)
