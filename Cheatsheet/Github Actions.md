@@ -40,7 +40,7 @@ jobs:
     # ...run something when the step fails
 ```
 # Artifact
-This is normally used for CI/CD build
+This is normally used to separate build step and deployment step
 ```yml
 jobs:
  build:

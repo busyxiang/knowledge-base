@@ -15,6 +15,8 @@
 - [Chroma.js](https://www.npmjs.com/package/chroma-js)
 ### Monitor/Tracking
 - [Sentry](https://sentry.io/)
+### Codegen
+- [GraphQL Codegen](https://the-guild.dev/graphql/codegen)
 ---
 ## React
 ### UI Library
