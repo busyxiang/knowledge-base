@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Postgres SQL.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Postgres SQL"
             }
           }
         ]
@@ -169,14 +169,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md"
+                "file": "Cheatsheet/Postgres SQL.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline of Postgres SQL"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -196,6 +196,7 @@
   },
   "active": "6ba11cf20b80c330",
   "lastOpenFiles": [
+    "Cheatsheet/Git.md",
     "Cheatsheet/Makefile.md",
     "Cheatsheet/Postgres SQL.md",
     "Cheatsheet/Typescript.md",
@@ -211,7 +212,6 @@
     "Platform/macOS.md",
     "Cheatsheet/Dropbox.md",
     "Cheatsheet/Expo.md",
-    "Cheatsheet/Git.md",
     "Cheatsheet/macOS.md",
     "Cheatsheet/Vim.md",
     "Cheatsheet/Vue.md",

@@ -31,5 +31,10 @@ FROM table2
 WHERE table1.common_column = table2.common_column
 AND table2.some_column = some_value;
 ```
+# Command
+## List All Databases
+```bash
+\l
+```
 # Best Practice
 - [Don't Do This](https://wiki.postgresql.org/wiki/Don't_Do_This#Don.27t_use_char.28n.29)
