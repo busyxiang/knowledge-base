@@ -8,6 +8,7 @@
 | rm -rf [path]       | Delete everything          |
 | alias               | List all alias             |
 | which [alias]       | Get alias source           |
+| cd -                | Go back to previous path   |
 # Alias
 ## Create Permanent Alias
 Edit  `~/.bash_aliases` or `~/.bashrc`  file

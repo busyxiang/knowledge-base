@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Postgres SQL.md",
+                "file": "Cheatsheet/Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Postgres SQL"
+              "title": "Linux"
             }
           }
         ]
@@ -169,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Postgres SQL.md"
+                "file": "Cheatsheet/Linux.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Postgres SQL"
+              "title": "Outline of Linux"
             }
           }
         ],
@@ -196,8 +196,8 @@
   },
   "active": "6ba11cf20b80c330",
   "lastOpenFiles": [
-    "2025-01-13.md",
     "Cheatsheet/Postgres SQL.md",
+    "2025-01-13.md",
     "Cheatsheet/NPM.md",
     "Cheatsheet/Linux.md",
     "Cheatsheet/macOS.md",
