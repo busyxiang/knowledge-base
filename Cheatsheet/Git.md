@@ -41,6 +41,24 @@ git fetch --tags --force
 ```bash
 git show [HASH]
 ```
-## Check Repo Size
+# Aliases
+Open git config file
+```bash
+git config --global -e
+```
+Add the following in the file
+```vim
+[alias]
+	fa = fetch --all --prune
+```
+
+OR
+
+Using the CLI
+```bash
+git config --global alias.fa "fetch --all --prune"
+```
+# Tools
+### Check Repo Size
 - [git-sizer](https://github.com/github/git-sizer)
 - https://www.jonathancreamer.com/how-we-shrunk-our-git-repo-size-by-94-percent/

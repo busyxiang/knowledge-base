@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Makefile.md",
-                "mode": "source",
+                "file": "Cheatsheet/Git.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Makefile"
+              "title": "Git"
             }
           }
         ]
@@ -169,14 +169,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Makefile.md"
+                "file": "Cheatsheet/Git.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Makefile"
+              "title": "Outline of Git"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -196,6 +196,7 @@
   },
   "active": "6ba11cf20b80c330",
   "lastOpenFiles": [
+    "Cheatsheet/Makefile.md",
     "Cheatsheet/Postgres SQL.md",
     "Cheatsheet/Typescript.md",
     "Platform/Mobile.md",
@@ -212,7 +213,6 @@
     "Cheatsheet/Expo.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/macOS.md",
-    "Cheatsheet/Makefile.md",
     "Cheatsheet/Vim.md",
     "Cheatsheet/Vue.md",
     "Cheatsheet/Web.md",
