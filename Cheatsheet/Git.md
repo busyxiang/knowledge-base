@@ -1,4 +1,3 @@
-# Command
 ## Create new branch and switch to it
 ```bash
 git checkout -b <branch>
