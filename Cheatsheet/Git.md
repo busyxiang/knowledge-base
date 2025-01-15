@@ -14,6 +14,10 @@ git clean -fxd
 ```bash
 git switch <branch>
 ```
+## Delete Local Branch
+```bash
+git branch -d <branch>
+```
 ## Push to another branch
 ```bash
 git push origin <source>:<target>
