@@ -26,6 +26,10 @@ git push origin <source>:<target>
 ```bash
 git pull --tags -f
 ```
+## Pull another branch without switching
+```bash
+git fetch origin <remote-branch>:<local-branch>
+```
 ## Update submodules
 ```bash
 git submodule update --recursive --remote

@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Cheatsheet/Git.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -194,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2860cab71a8186bf",
+  "active": "3ab77a3ab8414588",
   "lastOpenFiles": [
     "Cheatsheet/Git.md",
     "Cheatsheet/NPM.md",
