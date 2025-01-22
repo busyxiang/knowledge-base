@@ -48,6 +48,10 @@ git fetch --tags --force
 ```bash
 git show [HASH]
 ```
+## Reset Mixed
+```bash
+git reset --mixed head~1
+```
 # Aliases
 Open git config file
 ```bash
