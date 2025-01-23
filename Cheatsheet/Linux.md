@@ -9,6 +9,14 @@
 | alias               | List all alias             |
 | which [alias]       | Get alias source           |
 | cd -                | Go back to previous path   |
+# Navigate Terminal
+
+| Input       | Description               |
+| ----------- | ------------------------- |
+| control + A | jump to start of the line |
+| control + E | jump to end of the line   |
+|             |                           |
+
 # Alias
 ## Create Permanent Alias
 Edit  `~/.bash_aliases` or `~/.bashrc`  file
