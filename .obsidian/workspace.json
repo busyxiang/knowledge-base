@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Linux.md",
+                "file": "Cheatsheet/Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux"
+              "title": "Git"
             }
           }
         ]
@@ -169,14 +169,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Linux.md"
+                "file": "Cheatsheet/Git.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Linux"
+              "title": "Outline of Git"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -197,8 +197,8 @@
   "active": "2860cab71a8186bf",
   "lastOpenFiles": [
     "Cheatsheet/Git.md",
-    "Cheatsheet/NPM.md",
     "Cheatsheet/Linux.md",
+    "Cheatsheet/NPM.md",
     "Cheatsheet/Postgres SQL.md",
     "2025-01-13.md",
     "Cheatsheet/macOS.md",

@@ -52,6 +52,10 @@ git show [HASH]
 ```bash
 git reset --mixed head~1
 ```
+## Squash the Last X Commits
+```bash
+git rebase -i HEAD~[x]
+```
 # Aliases
 Open git config file
 ```bash
