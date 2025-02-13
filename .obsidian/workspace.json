@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -169,7 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md"
+                "file": "Cheatsheet/Git.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "Outline of Git"
@@ -194,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2860cab71a8186bf",
+  "active": "2f7645428ba15fea",
   "lastOpenFiles": [
     "Cheatsheet/Git.md",
     "Cheatsheet/Linux.md",
