@@ -56,6 +56,19 @@ git reset --mixed head~1
 ```bash
 git rebase -i HEAD~[x]
 ```
+The editor will open with a file like this
+```bash
+pick fda59df commit 1
+pick x536897 commit 2
+pick c01a668 commit 3
+```
+To transform all these commits into a single one, change the file to this
+```bash
+pick fda59df commit 1
+squash x536897 commit 2
+squash c01a668 commit 3
+```
+Then `:wq` save the changes and quit the editor
 # Aliases
 Open git config file
 ```bash
