@@ -180,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -198,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3ab77a3ab8414588",
+  "active": "2f7645428ba15fea",
   "lastOpenFiles": [
     "Cheatsheet/Docker.md",
     "Cheatsheet/macOS.md",

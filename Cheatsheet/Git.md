@@ -52,6 +52,10 @@ git show [HASH]
 ```bash
 git reset --mixed head~1
 ```
+## Reset Hard
+```bash
+git reset --hard origin/master
+```
 ## Squash the Last X Commits
 ```bash
 git rebase -i HEAD~[x]
