@@ -7,13 +7,14 @@ psql -U postgres -h localhost
 ```bash
 psql -h 127.0.0.1 -p [PORT] -d [DB_NAME] -U [USER]
 ```
-# Update Value
+# Query
+## Update
 
-## JSON
+### JSON
 ```sql
 update TABLE set COLUMN = jsonb_set(COLUMN, '{FIELD}', 'true') where id = 2;
 ```
-## Array
+### Array
 #### Add Item
 ```sql
 update TABLE set COLUMN = COLUMN || '{VALUE}' where id = 2
@@ -22,14 +23,21 @@ update TABLE set COLUMN = COLUMN || '{VALUE}' where id = 2
 ```sql
 update TABLE set COLUMN = array_remove(COLUMN, 'VALUE') where id = 1
 ```
-## Advanced
-### Update Using Two Tables
+### Advanced
+#### Update Using Two Tables
 ```sql
 UPDATE table1
 SET column_to_update = new_value
 FROM table2
 WHERE table1.common_column = table2.common_column
 AND table2.some_column = some_value;
+```
+#### Insert into Select
+```sql
+INSERT INTO payments_adyen (table_a_fk, column_a, column_b, column_c)
+SELECT id, $1 AS column_a, $2 AS column_b, $3 AS column_c
+FROM table_a
+WHERE pubic_id = $4;
 ```
 # Command
 ## List All Databases
