@@ -39,6 +39,13 @@ SELECT id, $1 AS column_a, $2 AS column_b, $3 AS column_c
 FROM table_a
 WHERE pubic_id = $4;
 ```
+
+```sql
+INSERT INTO archived_orders (order_id, customer_id, order_date, total_amount, archived_date)
+SELECT order_id, customer_id, order_date, total_amount, $2 AS archived_date
+FROM orders
+WHERE order_date < $1;
+```
 # Command
 ## List All Databases
 ```bash
