@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Cheatsheet/Postgres SQL.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -198,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3ab77a3ab8414588",
+  "active": "2860cab71a8186bf",
   "lastOpenFiles": [
     "Cheatsheet/NPM.md",
     "Cheatsheet/Git.md",
