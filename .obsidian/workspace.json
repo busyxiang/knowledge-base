@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Git"
             }
+          },
+          {
+            "id": "a329d311b639433f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,13 +183,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline"
             }
           }
         ],
@@ -198,7 +210,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2f7645428ba15fea",
+  "active": "a329d311b639433f",
   "lastOpenFiles": [
     "Cheatsheet/Postgres SQL.md",
     "Cheatsheet/NPM.md",
