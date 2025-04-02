@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Makefile.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
-            }
-          },
-          {
-            "id": "a329d311b639433f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
+              "title": "Makefile"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,16 +170,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Cheatsheet/Makefile.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Makefile"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -210,11 +198,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a329d311b639433f",
+  "active": "3ab77a3ab8414588",
   "lastOpenFiles": [
+    "Cheatsheet/Git.md",
     "Cheatsheet/Postgres SQL.md",
     "Cheatsheet/NPM.md",
-    "Cheatsheet/Git.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/macOS.md",
     "Cheatsheet/Linux.md",
