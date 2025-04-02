@@ -19,3 +19,4 @@ greet:
 ```
 - `\` means multiline command
 - `@` symbol suppress the command echo in the output. When use at the beginning of a line, it will affects the entire logical line including all continuations with `\`
+- `-p` stands for prompt
