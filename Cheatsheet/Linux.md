@@ -12,6 +12,7 @@
 | which [alias]       | Get alias source                              |
 | cd -                | Go back to previous path                      |
 | !!                  | Repeat the last command                       |
+| history             | View command history                          |
 # Navigate Terminal
 
 | Input       | Description               |
