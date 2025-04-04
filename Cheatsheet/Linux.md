@@ -25,6 +25,19 @@
 | -------- | ---------------------- |
 | crtl + r | Search command history |
 
+# Searching and Filtering Text
+## Basic search for a pattern
+```bash
+grep "error" log.txt
+```
+## Case-insensitive search
+```bash
+grep -i "warning" log.txt
+```
+## Recursive search in directories
+```bash
+grep -r "pattern" /path/to/directory
+```
 # Alias
 ## Create Permanent Alias
 Edit  `~/.bash_aliases` or `~/.bashrc`  file

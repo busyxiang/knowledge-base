@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Cheatsheet/Linux.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -180,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
