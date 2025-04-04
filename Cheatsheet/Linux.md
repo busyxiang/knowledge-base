@@ -1,14 +1,17 @@
 # Command
-| Command             | Description                |
-| ------------------- | -------------------------- |
-| ls                  | List all folders and files |
-| mkdir [folder-name] | Create folder              |
-| rm [file_path]      | Delete file                |
-| rmdir [folder_path] | Delete folder              |
-| rm -rf [path]       | Delete everything          |
-| alias               | List all alias             |
-| which [alias]       | Get alias source           |
-| cd -                | Go back to previous path   |
+| Command             | Description                                   |
+| ------------------- | --------------------------------------------- |
+| ls                  | List all folders and files                    |
+| ls -l               | `-l` means long format (detailed information) |
+| ls -a               | `-a` means all, including hidden files        |
+| mkdir [folder-name] | Create folder                                 |
+| rm [file_path]      | Delete file                                   |
+| rmdir [folder_path] | Delete folder                                 |
+| rm -rf [path]       | Delete everything                             |
+| alias               | List all alias                                |
+| which [alias]       | Get alias source                              |
+| cd -                | Go back to previous path                      |
+| !!                  | Repeat the last command                       |
 # Navigate Terminal
 
 | Input       | Description               |
@@ -16,6 +19,11 @@
 | control + A | jump to start of the line |
 | control + E | jump to end of the line   |
 |             |                           |
+# Shortcut
+
+| Key      | Description            |
+| -------- | ---------------------- |
+| crtl + r | Search command history |
 
 # Alias
 ## Create Permanent Alias
