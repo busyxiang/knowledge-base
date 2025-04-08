@@ -1,18 +1,19 @@
 # Command
-| Command             | Description                                   |
-| ------------------- | --------------------------------------------- |
-| ls                  | List all folders and files                    |
-| ls -l               | `-l` means long format (detailed information) |
-| ls -a               | `-a` means all, including hidden files        |
-| mkdir [folder-name] | Create folder                                 |
-| rm [file_path]      | Delete file                                   |
-| rmdir [folder_path] | Delete folder                                 |
-| rm -rf [path]       | Delete everything                             |
-| alias               | List all alias                                |
-| which [alias]       | Get alias source                              |
-| cd -                | Go back to previous path                      |
-| !!                  | Repeat the last command                       |
-| history             | View command history                          |
+| Command                   | Description                                   |
+| ------------------------- | --------------------------------------------- |
+| ls                        | List all folders and files                    |
+| ls -l                     | `-l` means long format (detailed information) |
+| ls -a                     | `-a` means all, including hidden files        |
+| mkdir [folder-name]       | Create folder                                 |
+| rm [file_path]            | Delete file                                   |
+| rmdir [folder_path]       | Delete folder                                 |
+| rm -rf [path]             | Delete everything                             |
+| alias                     | List all alias                                |
+| which [alias]             | Get alias source                              |
+| cd -                      | Go back to previous path                      |
+| !!                        | Repeat the last command                       |
+| history                   | View command history                          |
+| history \| grep [keyword] | Search history                                |
 # Navigate Terminal
 
 | Input       | Description               |
