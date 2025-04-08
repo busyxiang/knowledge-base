@@ -180,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -198,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2860cab71a8186bf",
+  "active": "3ab77a3ab8414588",
   "lastOpenFiles": [
     "Cheatsheet/Makefile.md",
     "Cheatsheet/Git.md",
