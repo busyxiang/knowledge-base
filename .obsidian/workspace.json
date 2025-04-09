@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Cheatsheet/Linux.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -180,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -201,12 +201,12 @@
   "active": "2860cab71a8186bf",
   "lastOpenFiles": [
     "Cheatsheet/Makefile.md",
+    "Cheatsheet/Linux.md",
     "Cheatsheet/Git.md",
     "Cheatsheet/Postgres SQL.md",
     "Cheatsheet/NPM.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/macOS.md",
-    "Cheatsheet/Linux.md",
     "2025-01-13.md",
     "Cheatsheet/Dropbox.md",
     "Cheatsheet/Typescript.md",

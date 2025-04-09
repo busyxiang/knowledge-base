@@ -40,6 +40,13 @@ grep -i "warning" log.txt
 ```bash
 grep -r "pattern" /path/to/directory
 ```
+# String
+## Trim
+```bash
+str='This is an example sentence'
+echo "${str:0:15}"
+# output: "This is an exam"
+```
 # Alias
 ## Create Permanent Alias
 Edit  `~/.bash_aliases` or `~/.bashrc`  file
