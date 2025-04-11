@@ -1,6 +1,23 @@
-## Create new branch and switch to it
+## Branch
+### Create new branch and switch to it
 ```bash
 git checkout -b <branch>
+```
+### Switch local branch
+```bash
+git switch <branch>
+```
+### Delete Local Branch
+```bash
+git branch -d <branch>
+```
+### Push to another branch
+```bash
+git push origin <source>:<target>
+```
+### Pull another branch without switching
+```bash
+git fetch origin <remote-branch>:<local-branch>
 ```
 ## Discard existing files uncommitted changes
 ```bash
@@ -10,25 +27,9 @@ git reset --hard
 ```bash
 git clean -fxd
 ```
-## Switch local branch
-```bash
-git switch <branch>
-```
-## Delete Local Branch
-```bash
-git branch -d <branch>
-```
-## Push to another branch
-```bash
-git push origin <source>:<target>
-```
 ## Resolve conflicting tags
 ```bash
 git pull --tags -f
-```
-## Pull another branch without switching
-```bash
-git fetch origin <remote-branch>:<local-branch>
 ```
 ## Update submodules
 ```bash
@@ -73,6 +74,10 @@ squash x536897 commit 2
 squash c01a668 commit 3
 ```
 Then `:wq` save the changes and quit the editor
+# File History
+```bash
+git log -- [file_path]
+```
 # Aliases
 Open git config file
 ```bash
