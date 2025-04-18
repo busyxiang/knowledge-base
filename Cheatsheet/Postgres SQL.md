@@ -46,6 +46,11 @@ SELECT order_id, customer_id, order_date, total_amount, $2 AS archived_date
 FROM orders
 WHERE order_date < $1;
 ```
+# User
+## Create
+```sql
+CREATE USER postgres SUPERUSER;
+```
 # Command
 ## List All Databases
 ```bash
