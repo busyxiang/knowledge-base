@@ -15,6 +15,7 @@
 | `Ctrl + A` | Jump to start of the line     |
 | `Ctrl + E` | Jump to end of the line       |
 | `Ctrl + R` | Search command history        |
+| `Ctrl + U` | Clear line                    |
 | `cd -`     | Go back to previous directory |
 ## Command History
 | Command                     | Description                  |
