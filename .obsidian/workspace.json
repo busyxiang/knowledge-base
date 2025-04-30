@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 259.5
   },
   "right": {
     "id": "d352442c1c86c9e8",
@@ -138,7 +138,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -170,17 +172,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Cheatsheet/Linux.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline of Linux"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
