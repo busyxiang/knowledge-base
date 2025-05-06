@@ -1,32 +1,48 @@
-# Kill localhost process
-For example, if the port is `localhost:8000`. run
+## Killing Localhost Processes
+
+To terminate a process running on a specific port (e.g., `localhost:8000`):
+1. Find the Process ID (PID):
 ```bash
 sudo lsof -i :8000
-
 ```
-Then run
+2. Kill the process using the PID:
 ```bash
 kill -9 <PID>
 ```
-# Homebrew Setup
-## Brewfile
-### Install
+## Homebrew Setup
+### Brewfile Management
+#### Installation
+- Install from default Brewfile (`~/Brewfile`):
 ```bash
-# Looks for "~/Brewfile" and installs its contents
 brew bundle install
-
-# Install specific brewfile
+```
+- Install from a specific Brewfile:
+```bash
 brew bundle --file=~/.private/Brewfile
 ```
-### Create
-dump a Brewfile of your current brew/cask/mas
+#### Creating a Brewfile
+Generate a Brewfile from your current installations:
 ```bash
 brew bundle dump
 ```
 ### My brewfile
 ```ruby
+# command-line utilities
+brew "git"
+brew "lazygit"
+brew "nvm"
+brew "zsh"
+brew "zsh-autosuggestions"
 
+# apps
+cask "iterm2"
+cask "raycast"
+cask "sourcetree"
+cask "spotify"
+cask "visual-studio-code"
 ```
-# ITerm2 Setup
-## Plugins
+---
+## iTerm2 Setup
+### Recommended Plugins
 - **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)**
+	Provides fish-like autosuggestions for Zsh.

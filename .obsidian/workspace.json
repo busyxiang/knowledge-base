@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Cheatsheet/macOS.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -172,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -191,7 +191,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6cedfc11a78e7cd5",
+  "active": "3ab77a3ab8414588",
   "lastOpenFiles": [
     "Cheatsheet/Linux.md",
     "Cheatsheet/Vim.md",
