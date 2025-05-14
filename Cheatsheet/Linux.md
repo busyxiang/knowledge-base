@@ -40,6 +40,13 @@ grep -r "pattern" /path/to/directory
 str='This is an example sentence'
 echo "${str:0:15}" # Output: "This is an exam"
 ```
+## File Manipulation
+```bash
+# Combine multiple text files into one file
+cat file1 file2 file3 file4 > combined.txt
+cat *.txt > combined.txt
+cat ./**/*.txt > combined.txt
+```
 ## Alias Management
 ```bash
 # Create a permanent alias (add to ~/.bash_aliases or ~/.bashrc)

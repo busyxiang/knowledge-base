@@ -136,6 +136,9 @@ jobs:
         env:
           RANDOM_NUMBER: ${{ steps.foo.outputs.random-number }}
 ```
+# Performance Optimizations
+- [cache](https://github.com/actions/cache)
+- [matrix strategies](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow)
 # Github Actions Package
 - [Create or Update Comment](https://github.com/marketplace/actions/create-or-update-comment#create-or-update-comment)
 - [Release Drafter](https://github.com/marketplace/actions/release-drafter)
