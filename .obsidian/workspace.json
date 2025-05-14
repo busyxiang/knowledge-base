@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Github Actions.md",
+                "file": "Cheatsheet/Linux.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Github Actions"
+              "title": "Linux"
             }
           }
         ]
@@ -192,6 +192,7 @@
   },
   "active": "6cedfc11a78e7cd5",
   "lastOpenFiles": [
+    "Cheatsheet/Github Actions.md",
     "Cheatsheet/Linux.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/Vim.md",
@@ -210,7 +211,6 @@
     "Cheatsheet/Web.md",
     "Cheatsheet/Typescript.md",
     "Cheatsheet/React Native.md",
-    "Cheatsheet/Github Actions.md",
     "Cheatsheet/Dropbox.md",
     "Cheatsheet/CSS.md",
     "Cheatsheet/Apollo GraphQL.md",

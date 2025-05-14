@@ -46,6 +46,7 @@ echo "${str:0:15}" # Output: "This is an exam"
 cat file1 file2 file3 file4 > combined.txt
 cat *.txt > combined.txt
 cat ./**/*.txt > combined.txt
+cat ./**/sample.txt > combined.txt
 ```
 ## Alias Management
 ```bash
