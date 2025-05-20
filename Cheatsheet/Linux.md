@@ -47,6 +47,9 @@ cat file1 file2 file3 file4 > combined.txt
 cat *.txt > combined.txt
 cat ./**/*.txt > combined.txt
 cat ./**/sample.txt > combined.txt
+
+# Copy files with visual progress (real-time)
+rsyc --progress file1.text /opt
 ```
 ## Alias Management
 ```bash
