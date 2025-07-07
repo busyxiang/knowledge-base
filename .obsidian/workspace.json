@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/Linux.md",
+                "file": "Cheatsheet/Postgres SQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux"
+              "title": "Postgres SQL"
             }
           }
         ]
@@ -192,9 +192,9 @@
   },
   "active": "6cedfc11a78e7cd5",
   "lastOpenFiles": [
+    "Cheatsheet/Linux.md",
     "Cheatsheet/Docker.md",
     "Cheatsheet/macOS.md",
-    "Cheatsheet/Linux.md",
     "Cheatsheet/Github Actions.md",
     "Cheatsheet/Vim.md",
     "Cheatsheet/Git.md",
