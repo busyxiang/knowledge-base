@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cheatsheet/macOS.md",
+                "file": "Platform/Arch Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "macOS"
+              "title": "Arch Linux"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 259.5
+    "width": 259.5,
+    "collapsed": true
   },
   "right": {
     "id": "d352442c1c86c9e8",
@@ -162,21 +163,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cheatsheet/Git.md",
+                "file": "Platform/Arch Linux.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline of Arch Linux"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,7 +194,10 @@
   },
   "active": "6cedfc11a78e7cd5",
   "lastOpenFiles": [
+    "Platform/Arch Linux.md.tmp.756002.1764685274423",
     "Cheatsheet/Git.md",
+    "Platform/Arch Linux.md",
+    "Platform/Arch Linux.md.tmp.709300.1764683636224",
     "Cheatsheet/macOS.md",
     "Untitled.base",
     "Untitled 1.base",
@@ -220,7 +224,6 @@
     "Cheatsheet/Bitbucket.md",
     "2025-01-13.md",
     "README.md",
-    "Platform/Mobile.md",
     "Untitled.canvas"
   ]
 }
