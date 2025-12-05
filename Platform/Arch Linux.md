@@ -1,3 +1,5 @@
+---
+
 ## Package Manager
 
 ### Installing Packages
@@ -135,6 +137,196 @@ sudo paccache -rk3
 | `-l` | List files |
 | `-o` | Query file owner |
 | `--noconfirm` | Skip confirmation prompts |
+
+---
+
+## Audio Control (PipeWire)
+
+### Managing Application Audio
+
+```bash
+# List all audio sinks/streams
+wpctl status
+
+# Mute a specific application by ID
+wpctl set-mute [ID] 1
+
+# Unmute a specific application by ID
+wpctl set-mute [ID] 0
+
+# Toggle mute for a specific application
+wpctl set-mute [ID] toggle
+
+# Set volume for a specific application (0.0 to 1.0)
+wpctl set-volume [ID] 0.5
+
+# Increase volume by 5%
+wpctl set-volume [ID] 5%+
+
+# Decrease volume by 5%
+wpctl set-volume [ID] 5%-
+```
+
+---
+
+## Disk Management
+
+### Formatting and Mounting Secondary Drives
+
+#### Identify the Drive
+
+```bash
+# List all block devices
+lsblk
+
+# Show detailed disk information
+sudo fdisk -l
+
+# Display partition information
+sudo blkid
+```
+
+#### Format the Drive
+
+```bash
+# Create a new partition table (WARNING: destroys all data)
+sudo fdisk /dev/sdX
+
+# Format partition as ext4
+sudo mkfs.ext4 /dev/sdX1
+
+# Format partition as NTFS (requires ntfs-3g package)
+sudo mkfs.ntfs /dev/sdX1
+
+# Format partition as exFAT (requires exfatprogs package)
+sudo mkfs.exfat /dev/sdX1
+
+# Format entire disk as ext4 (without partition table)
+sudo mkfs.ext4 /dev/sdX
+```
+
+#### Mount the Drive
+
+```bash
+# Create mount point
+sudo mkdir -p /mnt/data
+
+# Mount temporarily
+sudo mount /dev/sdX1 /mnt/data
+
+# Unmount
+sudo umount /mnt/data
+```
+
+#### Permanent Mount (via /etc/fstab)
+
+```bash
+# Get UUID of the partition
+sudo blkid /dev/sdX1
+
+# Edit fstab
+sudo vim /etc/fstab
+
+# Add entry (replace UUID with actual UUID from blkid)
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx /mnt/data ext4 defaults 0 2
+
+# Test fstab configuration
+sudo mount -a
+
+# Verify mount
+df -h
+```
+
+#### Common fstab Options
+
+| Option | Description |
+|--------|-------------|
+| `defaults` | Use default mount options (rw, suid, dev, exec, auto, nouser, async) |
+| `noatime` | Don't update access time (improves performance) |
+| `nofail` | Don't fail boot if device is missing |
+| `auto` | Mount automatically at boot |
+| `noauto` | Don't mount automatically (mount manually) |
+| `user` | Allow regular users to mount |
+| `0` | Dump field (0 = no backup) |
+| `2` | fsck order (0 = no check, 1 = root, 2 = other) |
+
+#### Set Permissions
+
+```bash
+# Change ownership to current user
+sudo chown -R $USER:$USER /mnt/data
+
+# Set permissions (read, write, execute for owner)
+sudo chmod 755 /mnt/data
+```
+
+#### Important Notes
+
+- **lost+found folder**: After formatting with ext4, a `lost+found` directory will appear at the root of the partition. This is used by the filesystem for recovery purposes. Do not delete or modify it.
+
+---
+
+## Account Management
+
+### Account Lockout (pam_faillock)
+
+#### Unlock a Locked Account
+
+```bash
+# Unlock specific user account
+sudo faillock --user [username] --reset
+
+# View failed login attempts for a user
+sudo faillock --user [username]
+
+# View all locked accounts
+sudo faillock
+```
+
+#### Configure Faillock Settings
+
+Edit the PAM configuration file:
+
+```bash
+sudo vim /etc/security/faillock.conf
+```
+
+Common configuration options:
+
+```conf
+# Number of failed attempts before lockout (default: 3)
+deny = 5
+
+# Lockout duration in seconds (default: 600 = 10 minutes)
+# Set to 0 for permanent lockout until manual reset
+unlock_time = 300
+
+# Time window for counting failed attempts (default: 900 = 15 minutes)
+fail_interval = 900
+
+# Allow root account to be locked (default: no)
+even_deny_root
+
+# Root account lockout duration (default: 600)
+root_unlock_time = 600
+```
+
+#### Apply Configuration Changes
+
+After editing `/etc/security/faillock.conf`, the changes take effect immediately. No service restart required.
+
+#### Check PAM Configuration
+
+```bash
+# View PAM configuration for system-auth
+cat /etc/pam.d/system-auth
+
+# Verify faillock is enabled (should see pam_faillock.so entries)
+grep faillock /etc/pam.d/system-auth
+```
+
+---
+
 ## Waybar
 
 ### Portal & PermissionStore Timeout Issues
