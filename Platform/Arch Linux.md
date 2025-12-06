@@ -1,5 +1,3 @@
----
-
 ## Package Manager
 
 ### Installing Packages
