@@ -165,6 +165,48 @@ wpctl set-volume [ID] 5%+
 wpctl set-volume [ID] 5%-
 ```
 
+### Troubleshooting: "does not support mute" Error
+
+If you get an error that an object "does not support mute", you're likely targeting the wrong type of PipeWire object.
+
+**Cause**: Not all PipeWire objects support mute functionality. You need to target **Streams** (applications), **Sinks** (output devices), or **Sources** (input devices) - not **Nodes** or **Devices**.
+
+```bash
+# Identify the correct object type
+wpctl status
+
+# Look for IDs under these sections:
+# ✓ Sinks - output devices (support mute)
+# ✓ Sources - input devices (support mute)
+# ✓ Streams - running applications (support mute)
+# ✗ Devices/Nodes - often DON'T support mute
+
+# Inspect an object to check its capabilities
+wpctl inspect [ID]
+```
+
+**Solution - For Application Audio:**
+```bash
+# List application streams (these support mute)
+wpctl status | grep -A 10 "Streams:"
+
+# Use the Stream ID (not Node ID) for mute control
+wpctl set-mute [STREAM_ID] toggle
+
+# Alternative using pactl
+pactl list sink-inputs
+pactl set-sink-input-mute [ID] 1
+```
+
+**Solution - For System Audio:**
+```bash
+# Mute/unmute default sink
+wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+# Or use specific Sink ID from wpctl status
+wpctl set-mute [SINK_ID] toggle
+```
+
 ---
 
 ## Disk Management
@@ -321,6 +363,57 @@ cat /etc/pam.d/system-auth
 
 # Verify faillock is enabled (should see pam_faillock.so entries)
 grep faillock /etc/pam.d/system-auth
+```
+
+---
+
+## Display Manager (tuigreet)
+
+### Resolution Not Matching Screen
+
+#### Problem Summary
+
+`tuigreet` displays at a low resolution instead of your monitor's native resolution. This occurs when the kernel doesn't properly initialize graphics mode early in the boot process.
+
+#### Cause
+
+The TTY/console framebuffer defaults to low resolution (often 1024x768 or lower) because:
+- Graphics drivers aren't loaded early enough during boot (missing Early KMS)
+- The kernel falls back to generic VESA/fbdev drivers
+
+#### Solution: Enable Early Kernel Mode Setting (KMS) for AMD GPU
+
+**Important**: You need **both** the GPU driver module AND any filesystem modules (like `btrfs`) in the MODULES array. Do not replace existing modules - add to them.
+
+**1. Edit mkinitcpio configuration:**
+```bash
+sudo vim /etc/mkinitcpio.conf
+```
+
+**2. Add amdgpu to MODULES:**
+```bash
+# Change from:
+MODULES=(btrfs)
+
+# To:
+MODULES=(amdgpu btrfs)
+```
+
+**3. Rebuild initramfs:**
+```bash
+sudo mkinitcpio -P
+```
+
+**4. Reboot**
+
+#### Verify Resolution
+
+```bash
+# Check current framebuffer resolution
+cat /sys/class/graphics/fb0/virtual_size
+
+# Check available video modes
+cat /sys/class/graphics/fb0/modes
 ```
 
 ---
