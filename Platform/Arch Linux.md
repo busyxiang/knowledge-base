@@ -503,3 +503,134 @@ The root cause is typically **stuck DBus session connections** that prevent port
 - Waybar modules relying on portals (media, notifications, brightness) will fail silently if the backend is unreachable
 - The `dbind-WARNING` about AT-SPI is harmless and can be ignored unless accessibility features are required
 - After system updates or session crashes, the DBus session may need to be restarted to restore portal functionality
+
+---
+
+## OBS Studio
+
+### Color Configuration
+
+#### Standard Dynamic Range (SDR) Video
+
+For normal video recording and streaming, use these settings:
+
+| Setting | Value |
+|---------|-------|
+| **Color Format** | NV12 |
+| **Color Space** | Rec.709 |
+| **Color Range** | Full |
+| **Encoder** | H.264 |
+
+**Configuration Location:**
+- Settings → Advanced → Video
+- Settings → Output → Encoder settings
+
+#### High Dynamic Range (HDR) Video
+
+For HDR video recording, use these settings:
+
+| Setting | Value |
+|---------|-------|
+| **Color Format** | P010 |
+| **Color Space** | Rec.2100 PQ |
+| **Color Range** | Full |
+| **Encoder** | H.265 (HEVC) |
+
+**Configuration Location:**
+- Settings → Advanced → Video
+- Settings → Output → Encoder settings
+
+#### Color Setting Explanations
+
+**Color Formats:**
+- **NV12** - Standard 4:2:0 chroma subsampling, efficient for SDR content
+- **P010** - 10-bit 4:2:0 format required for HDR capture and encoding
+
+**Color Spaces:**
+- **Rec.709** - Standard color space for HD video (SDR)
+- **Rec.2100 PQ** - HDR color space using Perceptual Quantizer transfer function
+
+**Color Range:**
+- **Full** - 0-255 range, recommended for PC displays and modern workflows
+- **Limited** - 16-235 range, traditional broadcast standard
+
+**Encoders:**
+- **H.264** - Widely compatible, efficient for SDR content
+- **H.265 (HEVC)** - Required for HDR, better compression but higher encoding cost
+
+---
+
+## Command Line Utilities
+
+### Counting Lines of Output
+
+Use `wc -l` to count the number of lines in command output:
+
+```bash
+# Count lines of output from any command
+some_command | wc -l
+
+# Examples:
+# Count installed packages
+pacman -Q | wc -l
+
+# Count files in current directory
+ls | wc -l
+
+# Count processes
+ps aux | wc -l
+
+# Count matching grep results
+grep "error" logfile.txt | wc -l
+
+# Count lines in a file directly
+wc -l /path/to/file
+```
+
+**Common wc options:**
+- `-l` - Count lines
+- `-w` - Count words
+- `-c` - Count bytes
+- `-m` - Count characters
+
+---
+
+## mpv
+
+Config file location: `~/.config/mpv/mpv.conf`
+
+### Save Playback Position
+
+Resume videos from where you left off:
+
+```
+save-position-on-quit=yes
+```
+
+Without this option, use `Shift+Q` to quit and save position, or `q` to quit without saving.
+
+### YouTube
+
+mpv uses `yt-dlp` (preferred) or `youtube-dl` to stream YouTube videos. Use `yt-dlp` as `youtube-dl` is no longer maintained.
+
+```bash
+# Install yt-dlp
+sudo pacman -S yt-dlp
+
+# Play YouTube video
+mpv "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+
+#### Auto-load Subtitles
+
+Automatically fetch subtitles when playing YouTube videos:
+
+```
+ytdl-raw-options=sub-langs="en,en-US,en-GB",write-subs=,write-auto-subs=
+slang=en,eng
+```
+
+- `sub-langs` - Subtitle languages to download (comma-separated)
+- `write-subs` - Download manual subtitles
+- `write-auto-subs` - Download auto-generated subtitles
+- `slang` - Preferred subtitle languages to display
