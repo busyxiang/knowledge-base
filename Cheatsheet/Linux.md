@@ -74,4 +74,36 @@ which [alias]
 | `{}`     | Command grouping                           | [ -d bin ] \|\| { echo "Creating bin"; mkdir bin; }            |
 | `()`     | Precedence grouping                        | (cmd1 && cmd2) \|\| (cmd3 && cmd4)                             |
 | `\`      | Line continuation                          | `cmd1\cmd2`                                                    |
+## SSH Port Forwarding
+SSH port forwarding (SSH tunneling) allows you to forward ports from a remote server to your localhost.
+
+```bash
+# Local port forwarding: Forward remote server port to localhost
+# Syntax: ssh -L [local_port]:localhost:[remote_port] user@remote_host
+ssh -L 8080:localhost:80 user@server.com
+# Access remote server's port 80 via localhost:8080
+
+# Example: Forward remote PostgreSQL database
+ssh -L 5432:localhost:5432 user@db-server.com
+# Connect to database via localhost:5432
+
+# Forward specific remote host through jump server
+ssh -L 9000:other-server:80 user@jump-server.com
+# Access other-server:80 via localhost:9000
+
+# Remote port forwarding: Expose local port to remote server
+ssh -R 8080:localhost:3000 user@server.com
+# Remote server can access your localhost:3000 via its port 8080
+
+# Dynamic port forwarding (SOCKS proxy)
+ssh -D 1080 user@server.com
+# Creates SOCKS proxy on localhost:1080
+
+# Keep connection alive in background
+ssh -fN -L 8080:localhost:80 user@server.com
+# -f: Run in background, -N: No command execution
+
+# Multiple port forwards
+ssh -L 8080:localhost:80 -L 3306:localhost:3306 user@server.com
+```
 
