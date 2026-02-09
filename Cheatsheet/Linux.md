@@ -105,5 +105,9 @@ ssh -fN -L 8080:localhost:80 user@server.com
 
 # Multiple port forwards
 ssh -L 8080:localhost:80 -L 3306:localhost:3306 user@server.com
+
+# Specify private key file with -i
+ssh -i ~/.ssh/my_private_key -L 8080:localhost:80 user@server.com
+# Use specific SSH key for authentication
 ```
 
