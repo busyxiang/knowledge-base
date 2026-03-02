@@ -1,4 +1,38 @@
+## Process Management
+
+### Kill a Process by Port
+
+```bash
+# Find the PID on a specific port
+sudo lsof -i :8000
+
+# Kill it
+kill -9 <PID>
+
+# One-liner
+sudo kill -9 $(sudo lsof -t -i:8000)
+```
+
+### List Running Ports
+
+```bash
+# List all listening ports
+sudo lsof -i -P -n | grep LISTEN
+
+# List ports starting with a specific prefix (e.g., 80xx)
+sudo lsof -i -P -n | grep LISTEN | grep ':80'
+
+# Alternative using ss
+ss -tlnp | grep ':80'
+
+# Show all ports starting with 3xxx
+sudo lsof -i -P -n | grep LISTEN | grep ':3'
+```
+
+---
+
 ## File and Directory Operations
+
 | Command               | Description                                 |
 | --------------------- | ------------------------------------------- |
 | `ls`                  | List all folders and files                  |
@@ -8,6 +42,9 @@
 | `rm [file_path]`      | Delete a file                               |
 | `rmdir [folder_path]` | Delete an empty folder                      |
 | `rm -rf [path]`       | Force delete everything (use with caution!) |
+
+---
+
 ## Terminal Navigation Shortcuts
 
 | Shortcut   | Description                   |
@@ -18,13 +55,21 @@
 | `Ctrl + U` | Clear before cursor           |
 | `Ctrl + K` | Clear after cursor            |
 | `cd -`     | Go back to previous directory |
+
+---
+
 ## Command History
-| Command                     | Description                  |
-| --------------------------- | ---------------------------- |
-| `!!`                        | Repeat the last command      |
-| `history`                   | View command history         |
-| `history \| grep [keyword]` | Search history for a keyword |
+
+| Command                      | Description                  |
+| ---------------------------- | ---------------------------- |
+| `!!`                         | Repeat the last command      |
+| `history`                    | View command history         |
+| `history \| grep [keyword]`  | Search history for a keyword |
+
+---
+
 ## Searching and Filtering Text
+
 ```bash
 # Basic pattern search
 grep "error" log.txt
@@ -35,24 +80,46 @@ grep -i "warning" log.txt
 # Recursive search in directories
 grep -r "pattern" /path/to/directory
 ```
+
+---
+
 ## String Manipulation
+
 ```bash
 # Trim a string
 str='This is an example sentence'
 echo "${str:0:15}" # Output: "This is an exam"
 ```
-## File Manipulation
-```bash
-# Combine multiple text files into one file
-cat file1 file2 file3 file4 > combined.txt
-cat *.txt > combined.txt
-cat ./**/*.txt > combined.txt
-cat ./**/sample.txt > combined.txt
 
-# Copy files with visual progress (real-time)
-rsyc --progress file1.text /opt
+---
+
+## File Manipulation
+
+```bash
+# Combine multiple text files into one
+cat file1 file2 file3 > combined.txt
+cat *.txt > combined.txt
+
+# Copy files with visual progress
+rsync --progress file1.txt /opt
 ```
+
+---
+
+## Certificate Conversion (OpenSSL)
+
+```bash
+# Convert .cer (DER) to .pem
+openssl x509 -in cert.cer -inform DER -out cert.pem -outform PEM
+
+# Convert .crt (PEM) to .pem
+openssl x509 -in cert.crt -inform PEM -out cert.pem -outform PEM
+```
+
+---
+
 ## Alias Management
+
 ```bash
 # Create a permanent alias (add to ~/.bash_aliases or ~/.bashrc)
 alias <name>='<command>'
@@ -63,51 +130,50 @@ alias
 # Find alias source
 which [alias]
 ```
+
+---
+
 ## Command Chaining Operators
-| Operator | Description                                | Example                                                        |
-| -------- | ------------------------------------------ | -------------------------------------------------------------- |
-| `&`      | Run command in background                  | `ping google.com &`<br><br>`ping google.com & ping google.com` |
-| `;`      | Run commands sequentially                  | `apt update; apt upgrade`                                      |
-| `&&`     | Run next command only if previous succeeds | `ping google.com && ls`                                        |
-| \|\|     | Run next command only if previous fails    | apt update \|\| echo "Failed"`                                 |
-| `!`      | Exclude pattern                            | `rm -r !(*.html)`                                              |
-| `{}`     | Command grouping                           | [ -d bin ] \|\| { echo "Creating bin"; mkdir bin; }            |
-| `()`     | Precedence grouping                        | (cmd1 && cmd2) \|\| (cmd3 && cmd4)                             |
-| `\`      | Line continuation                          | `cmd1\cmd2`                                                    |
+
+| Operator | Description                                | Example                              |
+| -------- | ------------------------------------------ | ------------------------------------ |
+| `&`      | Run command in background                  | `ping google.com &`                  |
+| `;`      | Run commands sequentially                  | `apt update; apt upgrade`            |
+| `&&`     | Run next only if previous succeeds         | `ping google.com && ls`              |
+| `\|\|`   | Run next only if previous fails            | `apt update \|\| echo "Failed"`     |
+| `!`      | Exclude pattern                            | `rm -r !(*.html)`                    |
+| `{}`     | Command grouping                           | `[ -d bin ] \|\| { mkdir bin; }`    |
+| `()`     | Precedence grouping                        | `(cmd1 && cmd2) \|\| (cmd3 && cmd4)` |
+| `\`      | Line continuation                          | Multi-line commands                  |
+
+---
+
 ## SSH Port Forwarding
-SSH port forwarding (SSH tunneling) allows you to forward ports from a remote server to your localhost.
+
+SSH tunneling allows you to forward ports between local and remote machines.
 
 ```bash
-# Local port forwarding: Forward remote server port to localhost
-# Syntax: ssh -L [local_port]:localhost:[remote_port] user@remote_host
-ssh -L 8080:localhost:80 user@server.com
-# Access remote server's port 80 via localhost:8080
+# Local port forwarding: access remote port via localhost
+ssh -L [local_port]:localhost:[remote_port] user@remote_host
 
-# Example: Forward remote PostgreSQL database
+# Example: Forward remote PostgreSQL
 ssh -L 5432:localhost:5432 user@db-server.com
-# Connect to database via localhost:5432
 
-# Forward specific remote host through jump server
+# Forward through a jump server
 ssh -L 9000:other-server:80 user@jump-server.com
-# Access other-server:80 via localhost:9000
 
-# Remote port forwarding: Expose local port to remote server
+# Remote port forwarding: expose local port to remote
 ssh -R 8080:localhost:3000 user@server.com
-# Remote server can access your localhost:3000 via its port 8080
 
 # Dynamic port forwarding (SOCKS proxy)
 ssh -D 1080 user@server.com
-# Creates SOCKS proxy on localhost:1080
 
-# Keep connection alive in background
+# Background connection (no shell)
 ssh -fN -L 8080:localhost:80 user@server.com
-# -f: Run in background, -N: No command execution
 
 # Multiple port forwards
 ssh -L 8080:localhost:80 -L 3306:localhost:3306 user@server.com
 
-# Specify private key file with -i
-ssh -i ~/.ssh/my_private_key -L 8080:localhost:80 user@server.com
-# Use specific SSH key for authentication
+# With specific SSH key
+ssh -i ~/.ssh/my_key -L 8080:localhost:80 user@server.com
 ```
-
