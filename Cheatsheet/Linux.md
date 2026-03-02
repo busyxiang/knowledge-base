@@ -180,6 +180,36 @@ ssh -i ~/.ssh/my_key -L 8080:localhost:80 user@server.com
 
 ---
 
+## Counting Output Lines
+
+```bash
+# Count lines of output from any command
+some_command | wc -l
+
+# Count lines in a file
+wc -l filename
+
+# Count words
+wc -w filename
+
+# Count characters
+wc -c filename
+
+# Count all (lines, words, chars)
+wc filename
+
+# Count files in a directory
+ls | wc -l
+
+# Count matches from grep
+grep "error" log.txt | wc -l
+
+# Count unique lines
+sort filename | uniq | wc -l
+```
+
+---
+
 ## tmux
 
 ### Create new window
