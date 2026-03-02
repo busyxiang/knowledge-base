@@ -1,43 +1,4 @@
-## Process Management
-
-### Killing Localhost Processes
-
-To terminate a process running on a specific port (e.g., `localhost:8000`):
-
-**Method 1: Step by step**
-
-```bash
-# 1. Find the Process ID (PID)
-sudo lsof -i :8000
-
-# 2. Kill the process using the PID
-kill -9 <PID>
-```
-
-**Method 2: One-liner**
-
-```bash
-# Kill process on port 8000 directly
-sudo kill -9 $(sudo lsof -t -i:8000)
-```
-
----
-
-## File Operations
-
-### Certificate Conversion
-
-Convert certificate formats using OpenSSL:
-
-```bash
-# Convert .cer/.crt to .pem format
-openssl x509 -in [file_name].cer -inform DER -out [file_name].pem -outform PEM
-
-# Alternative for different input formats
-openssl x509 -in [file_name].crt -inform PEM -out [file_name].pem -outform PEM
-```
-
-### Clipboard Operations
+## Clipboard Operations
 
 ```bash
 # Copy file contents to clipboard
