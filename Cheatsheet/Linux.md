@@ -192,6 +192,9 @@ ssh -i ~/.ssh/my_key -L 8080:localhost:80 user@server.com
 - List/select: `Ctrl + b`, then `w`
 - Last window: `Ctrl + b`, then `l`
 
+### Rename window
+- `Ctrl + b`, then `,` → type new name, press `Enter`
+
 ### Close window
 - `Ctrl + b`, then `&` → press `y`
 - Or type `exit` / press `Ctrl + d`
