@@ -177,3 +177,27 @@ ssh -L 8080:localhost:80 -L 3306:localhost:3306 user@server.com
 # With specific SSH key
 ssh -i ~/.ssh/my_key -L 8080:localhost:80 user@server.com
 ```
+
+---
+
+## tmux
+
+### Create new window
+- `Ctrl + b`, then `c`
+
+### Switch windows
+- Next: `Ctrl + b`, then `n`
+- Previous: `Ctrl + b`, then `p`
+- By number: `Ctrl + b`, then `0–9`
+- List/select: `Ctrl + b`, then `w`
+- Last window: `Ctrl + b`, then `l`
+
+### Close window
+- `Ctrl + b`, then `&` → press `y`
+- Or type `exit` / press `Ctrl + d`
+- Or: `tmux kill-window`
+
+### Kill sessions
+- Kill all sessions: `tmux kill-server`
+- Kill all except current: `tmux kill-session -a`
+- Kill specific session: `tmux kill-session -t <name>`
