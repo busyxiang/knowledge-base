@@ -13,6 +13,22 @@ kill -9 <PID>
 sudo kill -9 $(sudo lsof -t -i:8000)
 ```
 
+### List Running Ports
+
+```bash
+# List all listening ports
+sudo lsof -i -P -n | grep LISTEN
+
+# List ports starting with a specific prefix (e.g., 80xx)
+sudo lsof -i -P -n | grep LISTEN | grep ':80'
+
+# Alternative using ss
+ss -tlnp | grep ':80'
+
+# Show all ports starting with 3xxx
+sudo lsof -i -P -n | grep LISTEN | grep ':3'
+```
+
 ---
 
 ## File and Directory Operations
