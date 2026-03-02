@@ -30,7 +30,6 @@ Personal notes, cheatsheets, and references.
 - [Apollo GraphQL](Cheatsheet/Apollo%20GraphQL.md)
 - [Bitbucket](Cheatsheet/Bitbucket.md)
 - [Dropbox](Cheatsheet/Dropbox.md)
-- [Expo](Cheatsheet/Expo.md)
 
 ### OS
 - [macOS](Cheatsheet/macOS.md)
