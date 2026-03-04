@@ -180,6 +180,24 @@ ssh -i ~/.ssh/my_key -L 8080:localhost:80 user@server.com
 
 ---
 
+## Disk Usage
+
+```bash
+# Check overall disk usage (all mounted filesystems)
+df -h
+
+# Check size of folders in current directory
+du -sh *
+
+# Check size of a specific directory
+du -sh /path/to/dir
+
+# Find top 10 largest files/folders in current directory
+du -sh * | sort -rh | head -10
+```
+
+---
+
 ## Counting Output Lines
 
 ```bash
