@@ -252,3 +252,22 @@ sort filename | uniq | wc -l
 - Kill all sessions: `tmux kill-server`
 - Kill all except current: `tmux kill-session -a`
 - Kill specific session: `tmux kill-session -t <name>`
+
+## Output Redirection
+
+| Syntax | Meaning |
+| --- | --- |
+| `>` or `1>` | Redirect stdout (normal output) to file |
+| `2>` | Redirect stderr (errors) to file |
+| `2>/dev/null` | Silence errors (discard into the void) |
+| `2>&1` | Redirect stderr into stdout (merge both) |
+| `>/dev/null 2>&1` | Silence everything (stdout + stderr) |
+| `>>` | Append stdout to file (don't overwrite) |
+
+**`/dev/null`** — a special file that discards anything written to it.
+
+**Example:**
+```bash
+find / -name "foo" 2>/dev/null
+# Hides "Permission denied" errors, shows only results
+```
