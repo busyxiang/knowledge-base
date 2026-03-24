@@ -1,5 +1,8 @@
 # Google Cloud Platform
 Create separate project for **testing** and **production**, if not will have issues when verify the project
+
+## GCP Cloud Storage
+- Bucket names are **globally unique** — not scoped to your project. A name taken by anyone in the world is unavailable to you.
 # Digital Asset Links
 ## Generator
 [Link](https://developers.google.com/digital-asset-links/tools/generator)
