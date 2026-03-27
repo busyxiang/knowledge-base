@@ -120,6 +120,32 @@ sudo paccache -r
 sudo paccache -rk3
 ```
 
+### Fixing Checksum Failures (Stale Cache)
+
+#### Problem
+
+```
+==> Validating source files with sha256sums...
+    libcava-0.10.7.tar.gz ... FAILED
+==> ERROR: One or more files did not pass the validity check!
+```
+
+#### Cause
+
+yay skips re-downloading sources if a file with the same name already exists in `~/.cache/yay/`. When an AUR maintainer updates the PKGBUILD checksum without changing the source filename, the old cached file no longer matches.
+
+#### Solution
+
+```bash
+# Clear the cached source for the specific package
+rm -rf ~/.cache/yay/[package]
+
+# Rebuild
+yay -S [package]
+```
+
+---
+
 ### Common Flags
 
 | Flag | Description |
