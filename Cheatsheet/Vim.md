@@ -17,6 +17,18 @@
 | `:n`     | Go to line `n` (e.g., `:42`)   |
 | `Ctrl+u` | Move up half a page            |
 | `Ctrl+d` | Move down half a page          |
+## Search (Normal Mode)
+
+| Command  | Action                                      |
+| -------- | ------------------------------------------- |
+| `/text`  | Search forward for `text`                   |
+| `?text`  | Search backward for `text`                  |
+| `n`      | Jump to next match                          |
+| `N`      | Jump to previous match                      |
+| `*`      | Search forward for word under cursor        |
+| `#`      | Search backward for word under cursor       |
+| `:noh`   | Clear search highlight                      |
+
 ## File Operations (Command Mode)
 
 | Command | Description              |
