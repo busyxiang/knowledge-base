@@ -6,23 +6,100 @@
 - For complex problems, throw more compute at it via subagents
 - One task per subagent for focused execution
 
-## Agent Team Sample
+## Agent Team Template
+
+A prompt template for spawning a coordinated multi-agent team to implement a feature end-to-end. Fill in `{{placeholders}}` before use.
+
+### Placeholders
+
+| Placeholder | Example |
+|---|---|
+| `{{feature-name}}` | Cart discount apply flow |
+| `{{ticket}}` | JIRA-1234 |
+| `{{fe-repo-path}}` | /Users/me/repos/frontend |
+| `{{fe-worktree}}` | feat/cart-discount |
+| `{{be-repo-path}}` | /Users/me/repos/backend |
+| `{{be-worktree}}` | feat/cart-discount |
+| `{{base-branch}}` | staging |
+| `{{submodule-base}}` | master (if submodule changes needed) |
+
+### Template
+
 ```
-i need to work on [feature-name]. Create an agent team to implement the required changes. Spawn the following members
+I need to work on {{feature-name}}. Create an agent team to implement the required changes. Spawn the following members:
 
-Planner - gather and compile the requirements using this XXX and all its subtasks/child issues then run XXX → discuss with team → finalize the plan → XXX → XXX → XXX to validate consistency before implementation begins
+---
 
-Architect - use senior-architect skill, to help Planner and Backend to finalize the plan
+### Phase 1 — Planning & Design
 
-Security - use senior-security skill, to help Architect and Backend to identify any security issues
+**Planner**
+- Gather and compile requirements from {{ticket}} and all its subtasks/child issues
+- Run /jira to pull ticket details and acceptance criteria
+- Draft the implementation plan, then discuss with Architect and Security
+- Finalize the plan → share with all agents → get sign-off before Phase 2 begins
 
-Frontend - use senior-frontend skill, to work in XXX repo [repo-path] using worktree [worktree-name] branch off from staging, work closely with Backend when the backend changes are ready, report any backend issues or request to backend. During planning phase, review API contracts from Architect and start component scaffolding.
+**Architect** (use senior-architect skill)
+- Review Planner's draft for feasibility, scalability, and separation of concerns
+- Define API contracts (endpoints, request/response shapes, error codes)
+- Identify database schema changes if any
+- Publish contracts for Frontend and Backend to consume
 
-Backend - use senior-backend skill, to work in [repo-name] repo [repo-path] using worktree [worktree-name] branch off from staging, and its submodule branch off from master, work closely with Security for backend changes. When the changes are ready, inform Frontend and fix issues or address request requested by Frontend. Utilize [gen-test-kill] skill to generate/update tests for the new changes
+**Security** (use senior-security skill)
+- Review Architect's design for auth, input validation, injection, and data exposure risks
+- Flag issues as blocking or advisory — blocking issues must be resolved before Phase 2
 
-Unresolved disagreements escalate to the user.
+> Phase 1 exit criteria: Plan signed off by Planner + Architect + Security. API contracts documented. No blocking security issues open.
 
-All agents: Update task status in tasks.md as work progresses (mark in-progress, completed, or blocked). This is the shared progress tracker.
+---
 
-Done when: Backend and Frontend each have a PR created against staging (and Backend creates a submodule PR against master if submodule changes are needed) with tests and sonarqube quality gate passing. Both PRs reference the XXX and address all CodeRabbit review comments.
+### Phase 2 — Implementation
+
+**Frontend** (use senior-frontend skill)
+- Work in {{fe-repo-path}} using worktree {{fe-worktree}}, branch off from {{base-branch}}
+- Implement against API contracts from Phase 1
+- During Phase 1, may start component scaffolding and mock integration
+- When Backend signals readiness, switch to real integration and report any contract mismatches
+
+**Backend** (use senior-backend skill)
+- Work in {{be-repo-path}} using worktree {{be-worktree}}, branch off from {{base-branch}}
+- If submodule changes needed, branch submodule off from {{submodule-base}}
+- Implement API endpoints per Architect's contracts, coordinating with Security on sensitive paths
+- When endpoints are ready, notify Frontend and address any integration issues they raise
+- Use /sonar-verify-branch to check code quality during development
+- Generate and update tests for new changes
+
+> Phase 2 exit criteria: Frontend and Backend integration tested. No open cross-team blockers.
+
+---
+
+### Phase 3 — Verification & PR
+
+**Backend**
+- Create PR against {{base-branch}} (and submodule PR against {{submodule-base}} if needed)
+- Ensure tests pass and SonarQube quality gate passes
+- Address all CodeRabbit review comments
+- PR description references {{ticket}}
+
+**Frontend**
+- Create PR against {{base-branch}}
+- Ensure tests pass and SonarQube quality gate passes
+- Address all CodeRabbit review comments
+- PR description references {{ticket}}
+
+---
+
+### Coordination Rules
+
+- **Progress tracking**: All agents update task status in tasks.md as work progresses (in-progress, completed, blocked). This is the shared progress tracker.
+- **Escalation**: Unresolved disagreements escalate to the user.
+- **Communication**: Agents must notify dependent agents when their outputs are ready (e.g., Backend → Frontend when endpoints are live). Don't assume — send the message.
+- **Blocking issues**: Any agent can flag a blocker. Blocked agents should context-switch to unblocked work or assist the blocking agent.
+
+### Done When
+
+- Backend and Frontend each have a PR against {{base-branch}}
+- Backend has a submodule PR against {{submodule-base}} (if applicable)
+- All tests pass, SonarQube quality gates pass
+- All CodeRabbit review comments addressed
+- Both PRs reference {{ticket}}
 ```
