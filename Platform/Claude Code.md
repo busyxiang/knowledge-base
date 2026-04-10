@@ -36,19 +36,29 @@ I need to work on {{feature-name}}. Create an agent team to implement the requir
 - Gather and compile requirements from {{ticket}} and all its subtasks/child issues
 - Run /jira to pull ticket details and acceptance criteria
 - Draft the implementation plan, then discuss with Architect and Security
-- Finalize the plan → share with all agents → get sign-off before Phase 2 begins
+- Finalize the plan → share with all agents → get sign-off → present to user for approval before Phase 2 begins
 
 **Architect** (use senior-architect skill)
 - Review Planner's draft for feasibility, scalability, and separation of concerns
 - Define API contracts (endpoints, request/response shapes, error codes)
 - Identify database schema changes if any
 - Publish contracts for Frontend and Backend to consume
+- During Phase 2, remain available to clarify contracts and review architectural decisions
+- During Phase 3, review Backend's architecture choices and Frontend's integration patterns
 
 **Security** (use senior-security skill)
 - Review Architect's design for auth, input validation, injection, and data exposure risks
 - Flag issues as blocking or advisory — blocking issues must be resolved before Phase 2
+- During Phase 2, remain available to review sensitive implementation paths flagged by Backend
+- During Phase 3, review auth and data-handling code in both PRs before they are finalized
 
-> Phase 1 exit criteria: Plan signed off by Planner + Architect + Security. API contracts documented. No blocking security issues open.
+> **Phase 1 exit criteria:**
+> - Plan signed off by Planner + Architect + Security
+> - API contracts documented
+> - No blocking security issues open
+> - **User must approve the plan before proceeding to Phase 2** — do not start implementation until user gives explicit go-ahead
+> - If the user requests changes or provides feedback, the relevant agents (Planner, Architect, Security) must revise → re-discuss → re-present. Repeat until the user approves
+> - If the user rejects the plan entirely, all agents discard current work and restart planning from scratch based on user's new direction
 
 ---
 
@@ -57,7 +67,7 @@ I need to work on {{feature-name}}. Create an agent team to implement the requir
 **Frontend** (use senior-frontend skill)
 - Work in {{fe-repo-path}} using worktree {{fe-worktree}}, branch off from {{base-branch}}
 - Implement against API contracts from Phase 1
-- During Phase 1, may start component scaffolding and mock integration
+- During Phase 1, may start non-functional scaffolding only (layout, component stubs, type definitions) — no business logic until user approves the plan
 - When Backend signals readiness, switch to real integration and report any contract mismatches
 
 **Backend** (use senior-backend skill)
@@ -68,7 +78,12 @@ I need to work on {{feature-name}}. Create an agent team to implement the requir
 - Use /sonar-verify-branch to check code quality during development
 - Generate and update tests for new changes
 
-> Phase 2 exit criteria: Frontend and Backend integration tested. No open cross-team blockers.
+> **Phase 2 exit criteria:**
+> - Frontend successfully calls Backend endpoints with expected request/response shapes
+> - All automated tests pass (unit + integration)
+> - Architect has reviewed architectural decisions in both codebases
+> - Security has reviewed auth and data-handling paths
+> - No open cross-team blockers
 
 ---
 
