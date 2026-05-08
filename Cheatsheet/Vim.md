@@ -35,8 +35,19 @@
 | `*`         | Search word under cursor (forward)          |
 | `#`         | Search word under cursor (backward)         |
 | `''`        | Jump back to last position                  |
-| `Ctrl+o`    | Jump back in jump list                      |
-| `Ctrl+i`    | Jump forward in jump list                   |
+| `Ctrl+o`    | Backtrack to previous location (jump list)  |
+| `Ctrl+i`    | Move forward to next location (jump list)   |
+
+## Code Navigation (LSP)
+Native `gd`/`gD` work in plain Vim (search local/global declaration). `gr`, `gi`, `gy` are standard Neovim LSP bindings (Nvim 0.10+ defaults; otherwise mapped to `vim.lsp.buf.*`).
+
+| Command | Action                                              |
+| ------- | --------------------------------------------------- |
+| `gd`    | Go to definition of symbol under cursor             |
+| `gD`    | Go to declaration (e.g., header/extern declaration) |
+| `gr`    | List references to symbol under cursor              |
+| `gi`    | Go to implementation                                |
+| `gy`    | Go to type definition                               |
 
 ## Search
 | Command      | Action                      |
