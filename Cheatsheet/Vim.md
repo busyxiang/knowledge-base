@@ -86,3 +86,10 @@ Native `gd`/`gD` work in plain Vim (search local/global declaration). `gr`, `gi`
 | `:q!`   | Quit and discard changes |
 | `:w`    | Save file                |
 | `:wq`   | Save and quit            |
+
+## Registers
+| Command                  | Description                                |
+| ------------------------ | ------------------------------------------ |
+| `:let @+ = expand("%:t")` | Copy current filename to system clipboard |
+| `:let @+ = expand("%")`   | Copy relative path to system clipboard    |
+| `:let @+ = expand("%:p")` | Copy absolute path to system clipboard    |
