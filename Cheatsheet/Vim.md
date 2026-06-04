@@ -87,6 +87,24 @@ Native `gd`/`gD` work in plain Vim (search local/global declaration). `gr`, `gi`
 | `:w`    | Save file                |
 | `:wq`   | Save and quit            |
 
+## Commenting
+`gc` is the Neovim 0.10+ built-in comment toggle (also provided by `tpope/vim-commentary` / `numToStr/Comment.nvim`). Plain Vim has no native toggle — use the visual-block approach.
+
+| Command      | Action                                          |
+| ------------ | ----------------------------------------------- |
+| `gcc`        | Toggle comment on current line                  |
+| `gc{motion}` | Toggle comment over a motion (e.g., `gc3j`)     |
+| `gc` (visual)| Toggle comment on selected lines                |
+| `gcap`       | Toggle comment on a paragraph                   |
+
+### Without a plugin (manual)
+| Command                       | Action                                  |
+| ----------------------------- | --------------------------------------- |
+| `Ctrl+v`, select, `I // esc`  | Block-insert `//` to comment lines      |
+| `Ctrl+v`, select column, `x`  | Delete the comment chars to uncomment   |
+| `:s/^/# /` (visual range)     | Prefix selected lines with `# `         |
+| `:s/^# //` (visual range)     | Remove leading `# ` from selected lines |
+
 ## Registers
 | Command                   | Description                               |
 | ------------------------- | ----------------------------------------- |
