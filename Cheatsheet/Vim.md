@@ -49,6 +49,23 @@ Native `gd`/`gD` work in plain Vim (search local/global declaration). `gr`, `gi`
 | `gi`    | Go to implementation                                |
 | `gy`    | Go to type definition                               |
 
+## Folding
+Set a fold method first, e.g. `:set foldmethod=indent` (or `syntax`, `manual`, `marker`). `za` toggles; uppercase variants act recursively on nested folds.
+
+| Command | Action                                       |
+| ------- | -------------------------------------------- |
+| `zf{motion}` | Create fold over a motion (manual method) |
+| `za`    | Toggle fold under cursor                     |
+| `zo`    | Open fold under cursor                       |
+| `zc`    | Close fold under cursor                      |
+| `zO`    | Open fold recursively                        |
+| `zC`    | Close fold recursively                       |
+| `zR`    | Open all folds in file                       |
+| `zM`    | Close all folds in file                      |
+| `zd`    | Delete fold under cursor                     |
+| `zj`    | Jump to next fold                            |
+| `zk`    | Jump to previous fold                        |
+
 ## Search
 | Command      | Action                      |
 | ------------ | --------------------------- |
