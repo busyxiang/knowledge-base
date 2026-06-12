@@ -122,6 +122,27 @@ Set a fold method first, e.g. `:set foldmethod=indent` (or `syntax`, `manual`, `
 | `:s/^/# /` (visual range)     | Prefix selected lines with `# `         |
 | `:s/^# //` (visual range)     | Remove leading `# ` from selected lines |
 
+## Yank / Copy
+Append `+` to a yank to copy into the system clipboard instead of the unnamed register (needs a clipboard-enabled build — check with `vim --version | grep clipboard`).
+
+| Command   | Action                                       |
+| --------- | -------------------------------------------- |
+| `yy`      | Yank current line                            |
+| `y{motion}`| Yank over a motion (e.g., `y3j`)            |
+| `ggVGy`   | Yank entire file (unnamed register)          |
+| `:%y`     | Yank entire file (command mode)              |
+| `gg"+yG`  | Yank entire file to system clipboard         |
+| `:%y+`    | Yank entire file to system clipboard         |
+| `p`       | Paste after cursor (linewise: line below)    |
+| `P`       | Paste before cursor (linewise: line above)   |
+| `"+p`     | Paste from system clipboard                  |
+| `:put`    | Paste linewise below current line            |
+| `yyp`     | Duplicate current line below                 |
+| `yyP`     | Duplicate current line above                 |
+| `:t.`     | Duplicate current line below (range-capable) |
+
+No default shortcut for line duplication (unlike VS Code's `Shift+Alt+↓/↑`) — map it yourself, e.g. `nnoremap <A-S-Down> yyp` (terminal may not forward Alt/Shift+arrow; a `<leader>` mapping is more reliable).
+
 ## Registers
 | Command                   | Description                               |
 | ------------------------- | ----------------------------------------- |
